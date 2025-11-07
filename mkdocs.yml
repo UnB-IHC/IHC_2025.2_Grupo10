@@ -1,13 +1,15 @@
-repo_url: https://github.com/vitorfleonardo/VerificAAA
-repo_name: VerificAAA
 
-site_url: https://github.com/vitorfleonardo/VerificAAA
-site_name: VerificAAA
+repo_url: https://github.com/UnB-IHC/IHC_2025.2_Grupo10
+repo_name: IHC_2025.2_Grupo10
+
+site_url: https://pocket/IHC_2025.2_Grupo10/
+site_name: Projeto Grupo 10
 
 use_directory_urls: False
 
+
 nav:
-  - Início - VerificAAA: 'index.md'
+  - Home: 'index.md'
 
   - Desenvolvimento Web:
     - Desenvolvimento: 'devWeb/non_text_content.md'
@@ -24,18 +26,50 @@ nav:
   - Ferramentas:
     - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 
+
 theme:
-  name: readthedocs
-  locale: pt_BR
-  titles_only: true
-  logo: imagens/logo-verificaaa.png
-  favicon: imagens/logo-verificaaa.png
+  name: material
+  language: pt
+  logo: imagens/logo.png
+  favicon: imagens/logo.png
+  features:
+    - navigation.instant
+    - navigation.tabs   
+    - navigation.top  
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: amber
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Modo escuro
+    - scheme: slate
+      primary: amber
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Modo claro
+
 
 markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: false
       clickable_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - admonition
+
 
 extra_css:
   - stylesheets/extra.css
