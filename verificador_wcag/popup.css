@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 12px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}

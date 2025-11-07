@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>WCAG Checker</title>
+<style>
+body { font-family: Arial; width: 320px; margin: 10px; }
+button { width: 100%; padding: 10px; margin-top: 5px; cursor:pointer; }
+#resultado { margin-top: 10px; font-size: 14px; white-space: pre-wrap; }
+</style>
+
+<script src="translations.js"></script>
+<!-- <script src="jspdf.umd.min.js"></script> -->
+<script src="popup.js" defer></script>
+</head>
+<body>
+
+<h3>WCAG Checker (PT-BR)</h3>
+
+<button id="scan">Escanear Página</button>
+<button id="exportTxt">Exportar TXT</button>
+<!-- <button id="exportPdf">Exportar PDF</button> -->
+<button id="clear">Limpar destaques</button>
+
+<div id="resultado"></div>
+
+</body>
+</html>

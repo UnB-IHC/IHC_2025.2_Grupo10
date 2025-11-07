@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "WCAG Checker",
+  "version": "1.0",
+  "description": "Valida acessibilidade WCAG 2.1 em páginas web",
+  "permissions": ["tabs"],
+
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "WCAG Checker",
+    "default_icon": "icons/icon128.png",
+
+    "theme_icons": [
+      {
+        "light": "icons/icon48.png",
+        "dark": "icons/icon128.png",
+        "size": 16
+      }
+    ]
+
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["axe.min.js", "pageScript.js", "translations.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+ 
+}
