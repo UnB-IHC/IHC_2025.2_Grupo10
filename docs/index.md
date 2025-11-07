@@ -59,4 +59,4 @@ Essas visualizações ajudam a identificar áreas críticas e priorizar melhoria
 
 ## **Licença**
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](https://github.com/vitorfleonardo/VerificaAAA/tree/main?tab=License-1-ov-file) para detalhes.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](https://github.com/UnB-IHC/IHC_2025.2_Grupo10?tab=License-1-ov-file) para detalhes.
