@@ -50,10 +50,38 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-
+    <style>
+        .waffle-container {
+            display: flex; /* Permite que os quadrados fluam em linha */
+            flex-wrap: wrap; /* Quebra a linha quando não couberem mais */
+            max-width: 400px; /* Limite para a grade não ficar muito larga */
+            margin-top: 10px;
+        }
+        .waffle-square {
+            width: 20px;
+            height: 20px;
+            background-color: #eee; /* Cor do item pendente */
+            border: 1px solid #ccc;
+            margin: 2px;
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+        .waffle-square.completo {
+            background-color: #4CAF50; /* Cor do item completo (verde) */
+            border-color: #388E3C;
+        }
+        .progress-text {
+            font-weight: bold; 
+            margin-left: 10px; 
+            font-size: 1.1em;
+            vertical-align: top;
+            margin-top: 10px; /* Alinha o texto com a grade */
+            display: inline-block; /* Permite alinhar */
+        }
+    </style>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
     
     
     
@@ -961,7 +989,13 @@
 <h1 id="design">Design</h1>
 <p>"Existe uma lenda de que a acessibilidade torna um sítio web muito simples ou feio. Não é verdade: um sítio web bem estruturado pode ser bonito e criativo. É possível, inclusive, criar apresentações visuais diferentes para a mesma estrutura HTML de um sítio web com o uso de CSS e atender a diferentes necessidades". Dessa forma, nessa seção encontra-se checklist que garantam a acessibilidade no design.</p>
 <h2 id="aparencia">Aparência</h2>
-<ul class="task-list">
+
+<div style="margin-top: 10px; margin-bottom: 15px;">
+    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
+    <div class="waffle-container" id="waffle-aparencia"></div>
+    <span id="text-aparencia" class="progress-text">0/0</span>
+</div>
+47<ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <b> Adicionar instrução</b> que não <b>dependa exclusivamente da cor</b>. <a id="TEC1" href="#RP1">[1]</a></li>
 <li class="task-list-item"><input type="checkbox"/> <b> Adicionar informação</b> (como gráficos e diagramas) que não <b>dependa exclusivamente da cor</b>. <a id="TEC1" href="#RP1">[1]</a></li>
 <li class="task-list-item"><input type="checkbox"/> <b> Tamanho do texto ajustável</b> para permitir ampliação. <a id="TEC2" href="#RP2">[2]</a></li>
@@ -1069,5 +1103,94 @@
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Função para atualizar o progresso
+    function updateProgress(taskList, waffleContainer, textLabel) {
+        if (!taskList || !waffleContainer || !textLabel) return;
+
+        const checkboxes = taskList.querySelectorAll('input[type="checkbox"]');
+        const total = checkboxes.length;
+        const checked = taskList.querySelectorAll('input[type="checkbox"]:checked').length;
+        
+        // Atualiza o texto (Ex: "5/8")
+        textLabel.textContent = `${checked}/${total}`;
+        
+        // Pega os quadrados
+        let squares = waffleContainer.querySelectorAll('.waffle-square');
+        
+        // Se for a primeira vez, cria os quadrados
+        if (squares.length === 0 && total > 0) {
+            waffleContainer.innerHTML = ''; // Limpa
+            for (let i = 0; i < total; i++) {
+                const square = document.createElement('div');
+                square.className = 'waffle-square';
+                waffleContainer.appendChild(square);
+            }
+            squares = waffleContainer.querySelectorAll('.waffle-square'); // Re-seleciona
+        }
+
+        // Colore os quadrados
+        squares.forEach((square, index) => {
+            if (index < checked) {
+                square.classList.add('completo');
+            } else {
+                square.classList.remove('completo');
+            }
+        });
+    }
+
+    // --- Lógica Principal ---
+    // Encontra TODAS as listas de tarefas da página
+    const allTaskLists = document.querySelectorAll('ul.task-list');
+
+    allTaskLists.forEach((taskList) => {
+        // Encontra o cabeçalho (h1, h2, h3, etc.) ANTERIOR que tenha um ID
+        let header = taskList.previousElementSibling;
+        while (header && (header.tagName.startsWith('H') === false || !header.id)) {
+            header = header.previousElementSibling;
+        }
+
+        // Se não achou um cabeçalho com ID, pula esta lista
+        if (!header) {
+            console.warn('Não foi possível encontrar um cabeçalho com ID para esta lista de tarefas:', taskList);
+            return;
+        }
+
+        // Gera IDs únicos baseados no ID do cabeçalho
+        const headerId = header.id;
+        const waffleContainerId = `waffle-${headerId}`;
+        const textId = `text-${headerId}`;
+
+        // Cria e insere o HTML do gráfico
+        const waffleHtml = `
+            <div style="margin-top: 10px; margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
+                <div class="waffle-container" id="${waffleContainerId}"></div>
+                <span id="${textId}" class="progress-text">0/0</span>
+            </div>
+        `;
+        // Insere o HTML do gráfico DEPOIS do cabeçalho
+        header.insertAdjacentHTML('afterend', waffleHtml);
+
+        // Pega os elementos que acabamos de criar
+        const waffleContainer = document.getElementById(waffleContainerId);
+        const textLabel = document.getElementById(textId);
+
+        // Adiciona o "ouvinte" de eventos na lista
+        taskList.addEventListener('change', (e) => {
+            if (e.target.type === 'checkbox') {
+                updateProgress(taskList, waffleContainer, textLabel);
+            }
+        });
+        
+        // Roda a função uma vez no início para setar o estado
+        updateProgress(taskList, waffleContainer, textLabel);
+    });
+
+});
+</script>
+
   </body>
 </html>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt" class="no-js">
   <head>
@@ -50,6 +49,34 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+    <style>
+        .waffle-container {
+            display: flex; /* Permite que os quadrados fluam em linha */
+            flex-wrap: wrap; /* Quebra a linha quando não couberem mais */
+            max-width: 400px; /* Limite para a grade não ficar muito larga */
+            margin-top: 10px;
+        }
+        .waffle-square {
+            width: 20px;
+            height: 20px;
+            background-color: #eee; /* Cor do item pendente */
+            border: 1px solid #ccc;
+            margin: 2px;
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+        .waffle-square.completo {
+            background-color: #4CAF50; /* Cor do item completo (verde) */
+            border-color: #388E3C;
+        }
+        .progress-text {
+            font-weight: bold; 
+            margin-left: 10px; 
+            font-size: 1.1em;
+            vertical-align: top;
+            margin-top: 10px; /* Alinha o texto com a grade */
+            display: inline-block; /* Permite alinhar */
+        }
+    </style>
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -194,7 +221,7 @@
         <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10" title="Ir ao repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     IHC_2025.2_Grupo10
@@ -371,7 +398,7 @@
       <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10" title="Ir ao repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     IHC_2025.2_Grupo10
@@ -830,6 +857,12 @@
 
 <h1 id="primeiro-passo">Primeiro Passo</h1>
 <p>"Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade" <a id="TEC1" href="#RP1">[1]</a>.</p>
+
+<div style="margin-top: 10px; margin-bottom: 15px;">
+    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
+    <div class="waffle-container" id="waffle-passo"></div>
+    <span id="text-passo" class="progress-text">0/9</span>
+</div>
 <p>Nessa lógica, durante a etapa inicial do desenvolvimento de um software, elabore personas com os seguintes perfis abaixo, dessa forma, seu projeto vai garantir que o software contenha requisitos de acessibilidade.</p>
 <p>Em seu projeto, foram elaboradas personas para... </p>
 <ul class="task-list">
@@ -842,8 +875,16 @@
 <li class="task-list-item"><input type="checkbox"/> <b> Possíveis limitações decorrentes do envelhecimento </b> (que podem ser de um ou mais grupos de deficiências)</li>
 <li class="task-list-item"><input type="checkbox"/> <b> Pessoas com analfabetismo </b> (analfabetismo digital e funcional níveis 1, 2 e 3)</li>
 </ul>
+
+
 <h1 id="conscientizacao">Conscientização</h1>
 <p>"Na iniciação do projeto, é necessário garantir que a equipe de projeto esteja consciente sobre a questão da acessibilidade digital, dos direitos das pessoas com deficiência e do potencial de mercado desse público" <a id="TEC1" href="#RP1">[1]</a>.</p>
+
+<div style="margin-top: 10px; margin-bottom: 15px;">
+    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
+    <div class="waffle-container" id="waffle-consc"></div>
+    <span id="text-consc" class="progress-text">0/12</span>
+</div>
 <p>Sendo assim, existem argumentos que podem facilitar o processo de conscientização da equipe sobre a questão da acessibilidade digital. Esse argumentos estão representados no checklist abaixo. </p>
 <p>Em seu projeto, a equipe está consciente de...</p>
 <ul class="task-list">
@@ -860,15 +901,26 @@
 <li class="task-list-item"><input type="checkbox"/> Legislação: PORTARIA Nº 3, DE 7 DE MAIO DE 2007.</li>
 <li class="task-list-item"><input type="checkbox"/> Análise de mercado de software de acessibilidade digital.</li>
 </ul>
+
+
 <h1 id="planejamento">Planejamento</h1>
 <p>"É importante prever e elaborar a arquitetura para todos os públicos com deficiência, visando uma vida autônoma, com segurança e bem-estar" <a id="TEC1" href="#RP1">[1]</a>.</p>
+
+<div style="margin-top: 10px; margin-bottom: 15px;">
+    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
+    <div class="waffle-container" id="waffle-plan"></div>
+    <span id="text-plan" class="progress-text">0/3</span>
+</div>
 <p>Assim, é de suma importância que se tenha, incluso no plano de projeto, e, definição de recursos alocados, para estratégia de acessibilidade de um projeto de software. </p>
 <p>Em seu planejamento, há...</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade?</li>
 <li class="task-list-item"><input type="checkbox"/> Recursos alocados (pessoas, softwares, cursos, tarefas)?</li>
 <li class="task-list-item"><input type="checkbox"/> Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG)?</li>
+<li class="task-list-item"><input type="checkbox"/> Recursos alocados (pessoas, softwares, cursos, tarefas)?</li>
 </ul>
+
+
 <h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
 <blockquote>
 <p><a id="RP1" href="#TEC1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 9 Mai. 2024.</p>
@@ -880,16 +932,6 @@
 <p></a> MORDOR INTELLIGENCE. Digital Accessibility Software Market Size &amp; Share Analysis- Growth Trends &amp; Forecasts (2024-2029). Disponível em: <a href="https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market">https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market</a>. Acesso em: 9 Mai. 2024</p>
 <p></a> WORLD WIDE WEB CONSORTIUM. Web Content Accessibility Guidelines (WCAG) 2.1. Recomendação W3C, 21 setembro 2023. Disponível em: <a href="https://www.w3.org/TR/WCAG21/#sotd">https://www.w3.org/TR/WCAG21/#sotd</a>. Acesso em: 9 Mai. 2024</p>
 </blockquote>
-
-
-
-
-
-
-
-
-
-
 
 
                 
@@ -942,5 +984,100 @@
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
-  </body>
+<script>
+// Espera o conteúdo da página carregar completamente
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Define as seções que queremos monitorar
+    // Renomeei 'progressId' para 'waffleContainerId' para clareza
+    const sections = [
+        { 
+            headerId: 'primeiro-passo', 
+            waffleContainerId: 'waffle-passo', 
+            textId: 'text-passo' 
+        },
+        { 
+            headerId: 'conscientizacao', 
+            waffleContainerId: 'waffle-consc', 
+            textId: 'text-consc' 
+        },
+        { 
+            headerId: 'planejamento', 
+            waffleContainerId: 'waffle-plan', 
+            textId: 'text-plan' 
+        }
+    ];
+
+    // 2. Função para ATUALIZAR o progresso (muda as cores)
+    function updateProgress(section, taskList) {
+        
+        // 3. Pega os elementos da UI
+        const waffleContainer = document.getElementById(section.waffleContainerId);
+        const textLabel = document.getElementById(section.textId);
+        
+        if (!waffleContainer || !textLabel) {
+             console.error(`Waffle container ou texto não encontrados para ${section.headerId}.`);
+            return;
+        }
+
+        // 4. Calcula o progresso
+        const checkboxes = taskList.querySelectorAll('input[type="checkbox"]');
+        const total = checkboxes.length;
+        const checked = taskList.querySelectorAll('input[type="checkbox"]:checked').length;
+        
+        // 5. Atualiza o texto (Ex: "5/8")
+        textLabel.textContent = `${checked}/${total}`;
+        
+        // 6. Atualiza o Waffle Chart
+        const squares = waffleContainer.querySelectorAll('.waffle-square');
+        squares.forEach((square, index) => {
+            // Se o índice do quadrado for menor que o n° de marcados, colore
+            if (index < checked) {
+                square.classList.add('completo');
+            } else {
+                square.classList.remove('completo');
+            }
+        });
+    }
+
+    // 7. Configuração inicial:
+    sections.forEach(section => {
+        const header = document.getElementById(section.headerId);
+        const waffleContainer = document.getElementById(section.waffleContainerId);
+        if (!header || !waffleContainer) return;
+
+        // Encontra a lista de tarefas (pulando os <p> e a <div> do waffle)
+        let taskList = header.nextElementSibling;
+        while (taskList && taskList.tagName !== 'UL') {
+            taskList = taskList.nextElementSibling;
+        }
+        
+        if (taskList && taskList.classList.contains('task-list')) {
+            
+            // 8. CRIA os quadrados do Waffle
+            const totalItems = taskList.querySelectorAll('input[type="checkbox"]').length;
+            waffleContainer.innerHTML = ''; // Limpa o contêiner
+            
+            for (let i = 0; i < totalItems; i++) {
+                const square = document.createElement('div');
+                square.className = 'waffle-square';
+                waffleContainer.appendChild(square);
+            }
+            
+            // 9. Adiciona o "ouvinte" de eventos na lista
+            taskList.addEventListener('change', (e) => {
+                if (e.target.type === 'checkbox') {
+                    // Passa a taskList para a função não ter que encontrá-la de novo
+                    updateProgress(section, taskList);
+                }
+            });
+            
+            // 10. Roda a função uma vez no início para setar o estado (Ex: 0/8)
+            updateProgress(section, taskList);
+        }
+    });
+
+});
+</script>
+</body>
 </html>
