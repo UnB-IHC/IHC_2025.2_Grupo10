@@ -49,41 +49,35 @@
     
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
-<style>
+  
+    <style>
         .waffle-container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 400px;
+            display: flex; /* Permite que os quadrados fluam em linha */
+            flex-wrap: wrap; /* Quebra a linha quando não couberem mais */
+            max-width: 400px; /* Limite para a grade não ficar muito larga */
             margin-top: 10px;
         }
         .waffle-square {
             width: 20px;
             height: 20px;
-            background-color: #f0f0f0; /* Cor pendente mais suave */
+            background-color: #eee; /* Cor do item pendente */
             border: 1px solid #ccc;
             margin: 2px;
-            transition: background-color 0.3s ease;
-            
-            /* ✨ NOVA LINHA: Transforma em círculo */
-            border-radius: 50%; 
+            transition: background-color 0.3s ease; /* Transição suave */
         }
         .waffle-square.completo {
-            /* ✨ COR MUDADA: De verde para azul */
-            background-color: #007bff; 
-            border-color: #0056b3;
+            background-color: #4CAF50; /* Cor do item completo (verde) */
+            border-color: #388E3C;
         }
         .progress-text {
             font-weight: bold; 
             margin-left: 10px; 
             font-size: 1.1em;
             vertical-align: top;
-            margin-top: 10px;
-            display: inline-block;
-            
-             /* ✨ NOVA LINHA: Cor do texto para combinar */
-            color: #007bff;
+            margin-top: 10px; /* Alinha o texto com a grade */
+            display: inline-block; /* Permite alinhar */
         }
-</style>
+    </style>
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
