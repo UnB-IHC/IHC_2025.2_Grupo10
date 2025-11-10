@@ -1,55 +1,124 @@
 # Design
 
-"Existe uma lenda de que a acessibilidade torna um sítio web muito simples ou feio. Não é verdade: um sítio web bem estruturado pode ser bonito e criativo. É possível, inclusive, criar apresentações visuais diferentes para a mesma estrutura HTML de um sítio web com o uso de CSS e atender a diferentes necessidades". Dessa forma, nessa seção encontra-se checklist que garantam a acessibilidade no design.
+O design acessível é um dos pilares fundamentais da construção de produtos digitais inclusivos. Ele garante que a forma visual e a interação gráfica de interfaces possam ser percebidas, compreendidas e utilizadas pelo maior número possível de pessoas, independentemente de suas habilidades, limitações sensoriais ou contextos de uso.
 
-## Aparência
-- [ ] <b> Adicionar instrução</b> que não <b>dependa exclusivamente da cor</b>. <a id="TEC1" href="#RP1">[1]</a>
-- [ ] <b> Adicionar informação</b> (como gráficos e diagramas) que não <b>dependa exclusivamente da cor</b>. <a id="TEC1" href="#RP1">[1]</a>
-- [ ] <b> Tamanho do texto ajustável</b> para permitir ampliação. <a id="TEC2" href="#RP2">[2]</a>
-- [ ] <b> Descrever os controles</b> pelo nome, não apenas pela aparência ou localização. <a id="TEC3"href="#RP3">[3]</a>
-- [ ] <b> Garantir que dicas visuais</b> significativas atinjam 3:1 em relação ao fundo. <a id="TEC4" href="#RP4">[4]</a>
-- [ ] <b> Fazer com que as linhas</b> de texto se ajustem ao viewport. <a id="TEC5"href="#RP5">[5]</a>
-- [ ] Oferece uma <b> opção de alto contraste </b> (dark-mode) de suas páginas web e aumento de fontes.
-- [ ] Parágrafos com no <b> máximo 80 caracteres por linha </b>.
-- [ ] <b> Evita </b> o uso de <b> textos longos em caixa alta ou condensados </b>.
-- [ ] Evita o alinhamento justificado.
-- [ ] <b> Fontes são fluidas </b> e de fácil entendimento.
-- [ ] Toma o devido cuidado com <b>``` display:none ``` e ``` visibility:hidden ``` para os recursos de tecnologia assistiva</b>
-- [ ] Preferir <b> botões com texto e ícone </b>. E botões apenas com ícones tem o nome acessível.
+Com base nas diretrizes da **WCAG 2.2** e nos princípios estabelecidos pela **NBR 17225:2025**, o design acessível deve considerar elementos como contraste adequado entre texto e fundo, uso coerente das cores, tamanho e espaçamento de fontes, organização hierárquica da informação, além da clareza visual de ícones, botões e elementos interativos.
 
-## Animação
-- [ ] <b> Evitar conteúdo que pisque</b>, ou mantenha-o abaixo dos limites. <a id="TEC6" href="#RP6">[6]</a>
-- [ ] <b> Permitir que os usuários controlem as alterações de conteúdo</b> que ocorrem em paralelo com outro conteúdo. <a id="TEC7" href="#RP7">[7]</a>
-- [ ] <b> Toda a animação</b> deve obedecer à ```prefers-reduced-motion``` consulta de mídia. <a id="TEC8" href="#RP8">[8]</a>
+Além de promover a igualdade de acesso, o design acessível melhora a experiência geral de uso, fortalece a credibilidade da marca e contribui para a conformidade com padrões internacionais e legislações de acessibilidade digital. Em síntese, projetar com acessibilidade é projetar com empatia, criando produtos digitais que comunicam, incluem e respeitam todas as pessoas.
 
-## Contraste de Cores
-- [ ] <b> Verificar o contraste</b> de  todo texto tamanho normal. <a id="TEC9" href="#RP9">[9]</a>
-- [ ] <b> Verificar o contraste</b> de todo texto tamanho grande. <a id="TEC9" href="#RP9">[9]</a>
-- [ ] <b> Verificar o contraste</b> de todos os ícones. <a id="TEC4" href="#RP4">[4]</a>
-- [ ] <b> Verificar o contraste</b> das bordas dos elementos de entrada (entrada de texto, botões de opção, caixas de seleção, etc.). <a id="#RP4" href="#RP4">[4]</a>
-- [ ] <b> Verificar o texto</b> que se sobrepõe a imagens ou vídeos. <a id="TEC9" href="#RP9">[9]</a>
-- [ ] <b> Verificar ```::selection``` cores</b> personalizadas. <a id="TEC9" href="#RP9">[9]</a>
+## Instruções e características sensoriais
+
+Critérios relacionados à forma como o usuário compreende o conteúdo sem depender apenas de aspectos visuais ou sensoriais.
+
+- [ ]  Instruções não devem depender apenas de cor, forma, tamanho, localização, orientação ou som. <a id="TEC1" href="#RP1">[1]</a>
+- [ ]   Todos os elementos que podem receber foco devem apresentar um indicador visual claramente perceptível, assegurando que o usuário identifique onde está a interação no momento. <a id="TEC2" href="#RP2">[2]</a>
+- [ ]  Os elementos interativos devem seguir uma ordem lógica e intuitiva de navegação, respeitando a hierarquia e a estrutura visual da página, sem desorientar o usuário. <a id="TEC3" href="#RP3">[3]</a>
+
+## Cor e contraste
+
+Critérios sobre o uso da cor, contraste e legibilidade visual.
+
+- [ ] A cor não deve ser o único meio de transmitir informações. <a id="TEC4" href="#RP4">[4]</a>
+- [ ]  Texto e imagens de texto devem ter contraste de pelo menos 4,5:1. <a id="TEC5" href="#RP5">[5]</a>
+- [ ] Contraste de 7:1 para texto e imagens de texto (nível AAA). <a id="TEC6" href="#RP6">[6]</a>
+- [ ] Elementos gráficos e componentes da interface devem ter contraste mínimo de 3:1 com o fundo. <a id="TEC7"href="#RP7">[7]</a>
+- [ ] A cor não deve ser o único meio de transmitir informações ou identificar ações. Devem ser usados rótulos, ícones ou padrões complementares. <a id="TEC8" href="#RP8">[8]</a>
+- [ ] Todos os componentes de interface e elementos gráficos devem possuir contraste mínimo de 3:1 em relação ao plano de fundo e entre seus diferentes estados (normal, focado, pressionado etc.) <a id="TEC9"href="#RP9">[9]</a>
+
+## Texto e legibilidade
+
+Critérios relacionados à apresentação, tamanho e espaçamento do texto.
+
+- [ ]  O texto pode ser aumentado até 200% sem perda de conteúdo ou funcionalidade. <a id="TEC10" href="#RP10">[10]</a>
+- [ ] Prefira texto real a imagens contendo texto. <a id="TEC11" href="#RP11">[11]</a>
+- [ ] Controle de cores, largura de linha, espaçamento entre linhas e parágrafos. <a id="TEC12" href="#RP12">[12]</a>
+- [ ] Imagens de texto só devem ser usadas se forem decorativas ou essenciais. <a id="TEC13" href="#RP13">[13]</a>
+- [ ] Alterações no espaçamento entre letras, palavras e linhas não devem causar perda de conteúdo. <a id="TEC14" href="#RP14">[14]</a>
+- [ ] O espaçamento vertical entre linhas de texto deve ser de pelo menos 1,5 vezes o tamanho da fonte, garantindo conforto visual e boa legibilidade. <a id="TEC15" href="#RP15">[15]</a>
+- [ ] O conteúdo textual deve manter funcionalidade e legibilidade quando ampliado em até 200%, sem exigir rolagem horizontal ou causar sobreposição de elementos. <a id="TEC16" href="#RP16">[16]</a>
+- [ ] O conteúdo deve ser adaptável sem perda de informação ou necessidade de rolagem bidimensional. <a id="TEC17" href="#RP17">[17]</a>
+
+## Áudio e som
+
+Critérios que tratam da acessibilidade para usuários com limitações auditivas.
+
+- [ ] Áudio com fala deve ter som de fundo ausente ou significativamente mais baixo (20 dB). <a id="TEC18" href="#RP18">[18]</a>
+
+## Conteúdo interativo e foco
+
+Critérios sobre comportamento de foco, interação com o mouse e teclado.
+
+- [ ] O conteúdo exibido ao passar o mouse ou dar foco deve poder ser descartado e acessível. <a id="TEC19" href="#RP19">[19]</a>
+- [ ] A navegação sequencial deve manter a lógica e o significado. <a id="TEC20" href="#RP20">[20]</a>
+- [ ] O componente em foco não deve ficar totalmente oculto. <a id="TEC21" href="#RP21">[21]</a>
+- [ ] Nenhuma parte do componente em foco deve ser ocultada. <a id="TEC22" href="#RP22">[22]</a>
+- [ ] O foco deve ter contraste mínimo de 3:1 e borda visível (mínimo 2px). <a id="TEC23" href="#RP23">[23]</a>
+
+## Gestos e acionamento
+
+Critérios sobre o uso de gestos e cliques no conteúdo.
+
+- [ ] Todas as funções devem poder ser operadas com um único ponteiro, sem gestos complexos. <a id="TEC24" href="#RP24">[24]</a>
+- [ ] O acionamento de eventos com ponteiro deve poder ser cancelado ou ajustado. <a id="TEC25" href="#RP25">[25]</a>
+- [ ] Toda imagem que transmite informação relevante deve possuir texto alternativo equivalente, permitindo sua compreensão por leitores de tela. <a id="TEC26" href="#RP26">[26]</a>
+- [ ] Os elementos interativos devem possuir área de toque mínima de 44×44 px, garantindo acionamento fácil por pessoas com limitações motoras. <a id="TEC27" href="#RP27">[27]</a>
 
 ## Referências Bibliograficas
 
-> <a id="RP1" href="#TEC1">1.</a> WCAG 2.2 Understanding Docs. SC 1.4.1 Use of Color (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html). Acesso em: 9 Mai. 2024.
+> <a id="RP1" href="#TEC1">1.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.3.3 Características Sensoriais (Nível A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html.](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html). Acesso em: 9 Nov. 2025.
 
-> <a id="RP2" href="#TEC2">2.</a> WCAG 2.2 Understanding Docs. SC 1.4.4 Resize Text (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html). Acesso em: 9 Mai. 2024.
+> <a id="RP2" href="#TEC2">2.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
 
-> <a id="RP3" href="#TEC3">3.</a> WCAG 2.2 Understanding Docs. SC 1.3.3 Sensory Characteristics (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html). Acesso em: 9 Mai. 2024.
+> <a id="RP3" href="#TEC3">3.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em:  [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
 
-> <a id="RP4" href="#TEC4">4.</a> WCAG 2.2 Understanding Docs. SC 1.4.11 Non-text Contrast (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html). Acesso em: 9 Mai. 2024.
+> <a id="RP4" href="#TEC4">4.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.1 Uso da Cor (Nível A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html). Acesso em: 9 Nov. 2025.
 
-> <a id="RP5" href="#TEC5">5.</a> WCAG 2.2 Understanding Docs. SC 1.4.10 Reflow (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/reflow.html](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html). Acesso em: 9 Mai. 2024.
+> <a id="RP5" href="#TEC5">5.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.3 Contraste (Mínimo) (Nível AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Acesso em: 9 Nov. 2025.
 
-> <a id="RP6" href="#TEC6">6.</a> WCAG 2.2 Understanding Docs. SC 2.3.1 Three Flashes or Below Threshold (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html). Acesso em: 9 Mai. 2024.
+> <a id="RP6" href="#TEC6">6.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.6 Contraste (Aprimorado) (Nível AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced.html](https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced.html). Acesso em: 9 Nov. 2025.
 
-> <a id="RP7" href="#TEC7">7.</a> WCAG 2.2.2 Understanding Docs. SC 2.2.2 Pause, Stop, Hide (Level A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html). Acesso em: 9 Mai. 2024.
+> <a id="RP7" href="#TEC7">7.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.11 Contraste Não Textual (Nível AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html). Acesso em: 9 Nov. 2025.
 
-> <a id="RP8" href="#TEC8">8.</a> WCAG 2.2 Understanding Docs. SC 2.3.3 Animation from Interactions (Level AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html). Acesso em: 9 Mai. 2024.
+> <a id="RP8" href="#TEC8">8.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
 
-> <a id="RP9" href="#TEC9">9.</a> WCAG 2.2 Understanding Docs. SC 1.4.3 Contrast (Minimum) (Level AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Acesso em: 9 Mai. 2024.
+> <a id="RP9" href="#TEC9">9.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
+
+> <a id="RP10" href="#TEC10">10.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.4 Redimensionar Texto (Nível AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html.](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html.). Acesso em: 9 Nov. 2025.
+
+> <a id="RP11" href="#TEC11">11.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.5 Imagens de Texto (Nível AA). Disponível em:  [https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP12" href="#TEC12">12.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.8 Apresentação Visual (Nível AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html](https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP13" href="#TEC13">13.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.9 Imagens de Texto (Sem Exceção) (Nível AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP14" href="#TEC14">14.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.12 Espaçamento do Texto (Nível AA). Disponível em: Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html.](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP15" href="#TEC15">15.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
+
+> <a id="RP16" href="#TEC16">16.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
+
+> <a id="RP17" href="#TEC17">17.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.10 Refluxo (Reflow) (Nível AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/reflow.html](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP18" href="#TEC18">18.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.7 Áudio de Fundo Baixo ou Inexistente (Nível AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/low-or-no-background-audio.html](https://www.w3.org/WAI/WCAG22/Understanding/low-or-no-background-audio.html). Acesso em: 9 Nov. 2025. Acesso em: 9 Nov. 2025.
+
+> <a id="RP19" href="#TEC19">19.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 1.4.13 Conteúdo ao Passar o Cursor ou ao Focar (Nível AA). Disponível em:  Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP20" href="#TEC20">20.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 2.4.3 Ordem de Foco (Nível A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP21" href="#TEC21">21.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 2.4.11 Foco Não Obstruído (Mínimo) (Nível AA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP22" href="#TEC22">22.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 2.4.12 Foco Não Obstruído (Aprimorado) (Nível AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-enhanced.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-enhanced.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP23" href="#TEC23">23.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 2.4.13 Aparência do Foco (Nível AAA). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP24" href="#TEC24">24.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 2.5.1 Gestos de Acionamento (Nível A). Disponível em:  [https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP25" href="#TEC25">25.</a> Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2. CS 2.5.2 Cancelamento de Acionamento (Nível A). Disponível em: [https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html). Acesso em: 9 Nov. 2025.
+
+> <a id="RP26" href="#TEC26">26.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
+
+> <a id="RP27" href="#TEC27">27.</a> Associação Brasileira de Normas Técnicas (ABNT). NBR 17225: Acessibilidade Digital — Requisitos para Conteúdo na Web. Rio de Janeiro: ABNT, 2025. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf.). Acesso em: 9 Nov. 2025.
 
 ## Bibliografia
 
-> </a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024.
+> </a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Nov. 2025.
