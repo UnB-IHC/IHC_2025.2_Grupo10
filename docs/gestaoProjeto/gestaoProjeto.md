@@ -1,10 +1,37 @@
+hide: [navigation]
+
 # Primeiro Passo
 
 "Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade" <a id="TEC1" href="#RP1">[1]</a>.
 
 Nessa lógica, durante a etapa inicial do desenvolvimento de um software, elabore personas com os seguintes perfis abaixo, dessa forma, seu projeto vai garantir que o software contenha requisitos de acessibilidade.
 
+## Progresso WCAG
+
+ <div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 30px; margin-bottom: 30px;">
+  <div style="text-align: center;">
+    <h3>Nível A</h3>
+    <canvas id="graficoA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AA</h3>
+    <canvas id="graficoAA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AAA</h3>
+    <canvas id="graficoAAA" width="150" height="150"></canvas>
+  </div>
+ </div>
+ 
 Em seu projeto, foram elaboradas personas para... 
+
+
+ <input type="checkbox" data-level="A"> <b>Pessoas com Deficiência Visual</b> (cegueira, baixa visão, daltonismo ou deficiência cromática) <a id="TEC2" href="#RP2">[2](usar para fazer referencias)</a> 
+
+ <input type="checkbox" data-level="AA"> <b>Pessoas com Deficiência Física</b> (fraqueza, tremores, movimentos involuntá rios, paralisia, limitações da sensação, dor que impede movimento, ausênciade membros)   <a href="#RP1">[1]</a>  
+ 
+ <input type="checkbox" data-level="AAA"> <b>Pessoas com Deficiência Auditiva</b> (surdez, baixa audição, surdocegueira) <a d="TEC3" href="#RP3">[3]</a>  
+
 
 - [ ] <b> Pessoas com Deficiência Visual </b> (cegueira, baixa visão, daltonismo ou deficiência cromática)
 - [ ] <b> Pessoas com Deficiência Física </b> (fraqueza, tremores, movimentos involuntá rios, paralisia, limitações da sensação, dor que impede movimento, ausênciade membros) 

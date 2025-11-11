@@ -1,4 +1,4 @@
-# Pocket Grupo 10
+# WebAble Grupo 10
 
 <p align="center">
   <img src="imagens/logo.png" alt="Logo" width="200"/>
@@ -6,13 +6,13 @@
 
 ## **Descrição**
 
-O Pocket é um projeto desenvolvido no contexto da disciplina de Interação Humano-Computador (IHC), ministrada pela professora Rejane Maria da Costa Figueiredo na Universidade de Brasília (UnB).
+O WebAble é um projeto desenvolvido no contexto da disciplina de Interação Humano-Computador (IHC), ministrada pela professora Rejane Maria da Costa Figueiredo na Universidade de Brasília (UnB).
 
 Seu principal objetivo é disponibilizar um checklist prático de acessibilidade digital, abrangendo áreas fundamentais de um projeto: Desenvolvimento Web, Design, Geração de Conteúdo e Gestão de Projetos.
 
-O Pocket foi criado a partir da necessidade de promover soluções digitais mais inclusivas, auxiliando equipes a identificar e corrigir barreiras de acessibilidade de forma organizada e colaborativa.
+O WebAble foi criado a partir da necessidade de promover soluções digitais mais inclusivas, auxiliando equipes a identificar e corrigir barreiras de acessibilidade de forma organizada e colaborativa.
 
-## **Como usar o Pocket?**
+## **Como usar o WebAble?**
 
 O VerificAAA foi pensado para ser intuitivo, colaborativo e de fácil aplicação.
 Ele está dividido em quatro seções principais:
@@ -37,7 +37,7 @@ Ele está dividido em quatro seções principais:
 
 ## **Gráficos de Conformidade**
 
-O Pocket inclui uma visualização de conformidade para facilitar o acompanhamento dos avanços em acessibilidade.
+O WebAble inclui uma visualização de conformidade para facilitar o acompanhamento dos avanços em acessibilidade.
 
 - **Desenvolvimento Web e Design:** Gráficos baseados nos níveis A, AA e AAA da WCAG 2.2.
 

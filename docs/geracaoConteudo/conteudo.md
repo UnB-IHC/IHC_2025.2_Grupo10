@@ -1,14 +1,38 @@
+hide: [navigation]
+
 # Geração de conteúdo
 
 "Para produzir conteúdo digital acessível, a primeira etapa é compreender que tudo o que comunicamos impacta as pessoas; por isso, é fundamental começar pela forma como abordamos nosso público e criar a cultura e o hábito de acessibilidade digital em nossas equipes". Nesse sentido, nesta seção se apresentam boas práticas em formato de checklist para garantir acessibilidade na geração de conteúdo.
+
+## Progresso WCAG
+
+ <div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 30px; margin-bottom: 30px;">
+  <div style="text-align: center;">
+    <h3>Nível A</h3>
+    <canvas id="graficoA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AA</h3>
+    <canvas id="graficoAA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AAA</h3>
+    <canvas id="graficoAAA" width="150" height="150"></canvas>
+  </div>
+ </div>
 
 ## Termos
 - [ ] Sempre utilize o termo "pessoas com deficiência" (PCD) e depois complemente: visual, física, intelectual, múltipla, pessoa  surda, pessoa cega, usuária de cadeira de rodas (cadeirante), tetraplégica, paraplégica, pessoa com nanismo, com baixa visão, pessoa autista, disléxica, neurodiversa ou neurodivergente.  
 
 ## Textos
-- [ ] Usar textos descomplicados e objetivos. 
-- [ ] Usar de palavras conhecidas. 
-- [ ] Evitar figuras de linguagem. e frases com "senso de ugência" 
+
+ <input type="checkbox" data-level="A"> <b>Usar </b> textos descomplicados e objetivos. <a id="TEC2" href="#RP2">[2](usar para fazer referencias)</a> 
+
+ <input type="checkbox" data-level="AA"> <b>Usar</b> de palavras conhecidas.  <a href="#RP1">[1]</a>  
+ 
+ <input type="checkbox" data-level="AAA"> <b>Evitar </b> figuras de linguagem. e frases com "senso de ugência"  <a d="TEC3" href="#RP3">[3]</a>  
+
+
 - [ ] Usar pontuação adequada. 
 - [ ] Evitar frases extensas (ideal é ter de 15 a 20 palavras). 
 - [ ] Usar preferencialmente a ordem direta nas orações. 

@@ -1,3 +1,5 @@
+hide: [navigation]
+
 # Design
 
 O design acessível é um dos pilares fundamentais da construção de produtos digitais inclusivos. Ele garante que a forma visual e a interação gráfica de interfaces possam ser percebidas, compreendidas e utilizadas pelo maior número possível de pessoas, independentemente de suas habilidades, limitações sensoriais ou contextos de uso.
@@ -6,13 +8,30 @@ Com base nas diretrizes da **WCAG 2.2** e nos princípios estabelecidos pela **N
 
 Além de promover a igualdade de acesso, o design acessível melhora a experiência geral de uso, fortalece a credibilidade da marca e contribui para a conformidade com padrões internacionais e legislações de acessibilidade digital. Em síntese, projetar com acessibilidade é projetar com empatia, criando produtos digitais que comunicam, incluem e respeitam todas as pessoas.
 
+## Progresso WCAG
+
+ <div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 30px; margin-bottom: 30px;">
+  <div style="text-align: center;">
+    <h3>Nível A</h3>
+    <canvas id="graficoA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AA</h3>
+    <canvas id="graficoAA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AAA</h3>
+    <canvas id="graficoAAA" width="150" height="150"></canvas>
+  </div>
+ </div>
+
 ## Instruções e características sensoriais
 
 Critérios relacionados à forma como o usuário compreende o conteúdo sem depender apenas de aspectos visuais ou sensoriais.
-
-- [ ]  Instruções não devem depender apenas de cor, forma, tamanho, localização, orientação ou som. <a id="TEC1" href="#RP1">[1]</a>
-- [ ]   Todos os elementos que podem receber foco devem apresentar um indicador visual claramente perceptível, assegurando que o usuário identifique onde está a interação no momento. <a id="TEC2" href="#RP2">[2]</a>
-- [ ]  Os elementos interativos devem seguir uma ordem lógica e intuitiva de navegação, respeitando a hierarquia e a estrutura visual da página, sem desorientar o usuário. <a id="TEC3" href="#RP3">[3]</a>
+ 
+ <input type="checkbox" data-level="A"> <b>Instruções não devem </b> os elementos que podem receber foco devem apresentar um indicador visual claramente perceptível, assegurando que o usuário identifique onde está a interação no momento.  <a id="TEC2" href="#RP2">[2]</a>  
+ <input type="checkbox" data-level="AA"> <b>Todos</b> para imagens decorativas que não têm significado. <a href="#RP1">[1]</a>  
+ <input type="checkbox" data-level="AAA"> <b>Os elementos interativos devem seguir uma ordem</b> lógica e intuitiva de navegação, respeitando a hierarquia e a estrutura visual da página, sem desorientar o usuário. <a d="TEC3" href="#RP3">[3]</a>  
 
 ## Cor e contraste
 

@@ -1,4 +1,4 @@
-# Pocket
+# WebAble
 
 <div align="center">
 <img src="docs/imagens/logo.png" alt="Logo" style="width: 100px">
@@ -7,7 +7,7 @@
 
 ## Introdução
 
-O Pocket é um projeto desenvolvido durante a disciplina de Interação Humano-Computador (IHC), ministrada pela professora Rejane Maria da Costa Figueiredo na Universidade de Brasília (UnB), ao longo do semestre 2025.2.
+O WebAble é um projeto desenvolvido durante a disciplina de Interação Humano-Computador (IHC), ministrada pela professora Rejane Maria da Costa Figueiredo na Universidade de Brasília (UnB), ao longo do semestre 2025.2.
 
 Este repositório tem como propósito disponibilizar um checklist prático de acessibilidade digital, reunindo diretrizes e boas práticas para diferentes áreas de projeto, incluindo:
 desenvolvimento web, design, geração de conteúdo e gestão de projetos.
@@ -41,7 +41,7 @@ O material reúne itens de verificação (checklist) com base nas principais ref
 
 - Guia de Boas Práticas para Acessibilidade Digital: Publicado pelo Governo do Brasil
 
-Além disso, o Pocket conta com recursos que facilitam o uso e a compreensão dos critérios:
+Além disso, o WebAble conta com recursos que facilitam o uso e a compreensão dos critérios:
 
 - Checkboxes interativos com persistência local (os dados permanecem no navegador)
 
