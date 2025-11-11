@@ -33,7 +33,7 @@ theme:
   logo: imagens/logo.png
   favicon: imagens/logo.png
   features:
-    - navigation.instant
+#    - navigation.instant
     - navigation.tabs   
     - navigation.top  
     - navigation.sections
@@ -73,3 +73,8 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - js/progresso.js
+
+
