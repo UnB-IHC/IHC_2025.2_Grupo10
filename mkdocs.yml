@@ -21,6 +21,9 @@ nav:
   - Gestão de Projetos:
       - Gestão de Projetos: 'gestaoProjeto/gestaoProjeto.md'
 
+  - Heuristica de Nielsen:
+      - Heurística de Nielsen: 'heuristica/heuristica.md'
+
   - Ferramentas:
       - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
 

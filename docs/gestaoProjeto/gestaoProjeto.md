@@ -1,79 +1,89 @@
 hide: [navigation]
 
-# Primeiro Passo
+# Checklist de Acessibilidade — Gestão de Projetos
 
-"Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade" <a id="TEC1" href="#RP1">[1]</a>.
-
-Nessa lógica, durante a etapa inicial do desenvolvimento de um software, elabore personas com os seguintes perfis abaixo, dessa forma, seu projeto vai garantir que o software contenha requisitos de acessibilidade.
+> “Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade.”  <a id="TEC1" href="#RP1">[1]</a>
 
 ## Progresso WCAG
 
- <div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 30px; margin-bottom: 30px;">
+ <div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 60px; margin-bottom: 30px;">
   <div style="text-align: center;">
-    <h3>Nível A</h3>
+    <h4>Personas</h4>
     <canvas id="graficoA" width="150" height="150"></canvas>
   </div>
   <div style="text-align: center;">
-    <h3>Nível AA</h3>
+    <h4>Conscientização</h4>
     <canvas id="graficoAA" width="150" height="150"></canvas>
   </div>
   <div style="text-align: center;">
-    <h3>Nível AAA</h3>
+    <h4>Planejamento do Projeto</h4>
     <canvas id="graficoAAA" width="150" height="150"></canvas>
   </div>
  </div>
  
-Em seu projeto, foram elaboradas personas para... 
 
 
- <input type="checkbox" data-level="A"> <b>Pessoas com Deficiência Visual</b> (cegueira, baixa visão, daltonismo ou deficiência cromática) <a id="TEC2" href="#RP2">[2](usar para fazer referencias)</a> 
+## 1. Personas WCAG
 
- <input type="checkbox" data-level="AA"> <b>Pessoas com Deficiência Física</b> (fraqueza, tremores, movimentos involuntá rios, paralisia, limitações da sensação, dor que impede movimento, ausênciade membros)   <a href="#RP1">[1]</a>  
- 
- <input type="checkbox" data-level="AAA"> <b>Pessoas com Deficiência Auditiva</b> (surdez, baixa audição, surdocegueira) <a d="TEC3" href="#RP3">[3]</a>  
+Durante a etapa inicial do desenvolvimento de um software acessível, recomenda-se a criação de *personas* que representem diferentes grupos de usuários, conforme orientações da WCAG 2.2 <a id="TEC2" href="#RP4">[4]</a> e da NBR 17225/2025 <a href="#RP5">[5]</a>.
 
 
-- [ ] <b> Pessoas com Deficiência Visual </b> (cegueira, baixa visão, daltonismo ou deficiência cromática)
-- [ ] <b> Pessoas com Deficiência Física </b> (fraqueza, tremores, movimentos involuntá rios, paralisia, limitações da sensação, dor que impede movimento, ausênciade membros) 
-- [ ] <b> Pessoas com Deficiência Auditiva </b> (surdez, baixa audição, surdocegueira)
-- [ ] <b> Pessoas com Deficiência na Fala </b> (dificuldade para falar, volume insuficiente, gagueira, mudez) 
-- [ ] <b> Pessoas Neurodiversas </b> (dificuldades de diferentes graus para ver, escutar, falar, compreender e interagir socialmente)
-- [ ] <b> Pessoas com Múltiplas Deficiências </b> (combinação de duas ou mais deficiências anteriores)
-- [ ] <b> Possíveis limitações decorrentes do envelhecimento </b> (que podem ser de um ou mais grupos de deficiências)
-- [ ] <b> Pessoas com analfabetismo </b> (analfabetismo digital e funcional níveis 1, 2 e 3)
+  <input type="checkbox" data-level="A"> <label for="p_personas_visual"><b>Pessoas com Deficiência Visual</b> (cegueira, baixa visão, daltonismo ou deficiência cromática). <a href="#RP4">[4]</a></label><br>
 
-# Conscientização
+  <input type="checkbox" data-level="A"> <label for="p_personas_fisica"><b>Pessoas com Deficiência Física</b> (fraqueza, tremores, movimentos involuntários, paralisia, limitações da sensação, dor que impede movimento, ausência de membros). <a href="#RP1">[1]</a></label><br>
 
-"Na iniciação do projeto, é necessário garantir que a equipe de projeto esteja consciente sobre a questão da acessibilidade digital, dos direitos das pessoas com deficiência e do potencial de mercado desse público" <a id="TEC1" href="#RP1">[1]</a>.
+  <input type="checkbox" data-level="A"> <label for="p_personas_auditiva"><b>Pessoas com Deficiência Auditiva</b> (surdez, baixa audição, surdocegueira). <a id="TEC3" href="#RP3">[3]</a></label><br>
 
-Sendo assim, existem argumentos que podem facilitar o processo de conscientização da equipe sobre a questão da acessibilidade digital. Esse argumentos estão representados no checklist abaixo. 
+  <input type="checkbox" data-level="A"> <label for="p_personas_fala"><b>Pessoas com Deficiência na Fala</b> (dificuldade para falar, volume insuficiente, gagueira, mudez). <a href="#RP1">[1]</a></label><br>
 
-Em seu projeto, a equipe está consciente de...
+  <input type="checkbox" data-level="A"> <label for="p_personas_neuro"><b>Pessoas Neurodiversas</b> (autismo, TDAH, dislexia e outras condições cognitivas). <a href="#RP5">[5]</a></label><br>
 
-- [ ] Quantidade de pessoas no mundo com algum tipo de deficiência.
-- [ ] Quantidade de pessoas no Brasil com algum tipo de deficiência, segundo IBGE.
-- [ ] Natureza da deficiência: congênita, hereditária, adquirida, temporária.
-- [ ] Grupos mais comuns de tipos de deficiência.
-- [ ] Quanto custa a acessibilidade?
-- [ ] Quanto tempo a mais o projeto precisará para implementar acessibilidade?
-- [ ] Quantas pessoas com deficiência vão usar meu aplicativo ou acessar meu sítio de Internet?
-- [ ] Pessoas cegas compram online?
-- [ ] Pessoas tetraplégicas usam smartphone?
-- [ ] Legislação: A Convenção sobre os Direitos das Pessoas com Deficiência Comentada.
-- [ ] Legislação: PORTARIA Nº 3, DE 7 DE MAIO DE 2007.
-- [ ] Análise de mercado de software de acessibilidade digital.
+  <input type="checkbox" data-level="A"> <label for="p_personas_multiplas"><b>Pessoas com Múltiplas Deficiências</b> (combinação de duas ou mais deficiências). <a href="#RP1">[1]</a></label><br>
 
-# Planejamento
+  <input type="checkbox" data-level="A"> <label for="p_personas_idosos"><b>Possíveis Limitações Decorrentes do Envelhecimento</b> (visão reduzida, audição prejudicada, mobilidade limitada). <a href="#RP6">[6]</a></label><br>
 
-"É importante prever e elaborar a arquitetura para todos os públicos com deficiência, visando uma vida autônoma, com segurança e bem-estar" <a id="TEC1" href="#RP1">[1]</a>.
+  <input type="checkbox" data-level="A"> <label for="p_personas_analf"><b>Pessoas com Analfabetismo</b> (analfabetismo digital e funcional, níveis 1, 2 e 3). <a href="#RP7">[7]</a></label><br>
 
-Assim, é de suma importância que se tenha, incluso no plano de projeto, e, definição de recursos alocados, para estratégia de acessibilidade de um projeto de software. 
+## 2. Conscientização da Equipe
 
-Em seu planejamento, há...
+> “Na iniciação do projeto, é necessário garantir que a equipe esteja consciente sobre a questão da acessibilidade digital, dos direitos das pessoas com deficiência e do potencial de mercado desse público.”  <a href="#RP1">[1]</a>
 
-- [ ] Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade?
-- [ ] Recursos alocados (pessoas, softwares, cursos, tarefas)?
-- [ ] Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG)?
+  <input type="checkbox" data-level="AA"> <label for="c_ibge">A quantidade de pessoas com deficiência no Brasil, conforme o Censo IBGE 2022. <a href="#RP7">[7]</a></label><br>
+
+  <input type="checkbox" data-level="AA"> <label for="c_natureza">Que deficiências podem ser congênitas, hereditárias, adquiridas ou temporárias. <a href="#RP1">[1]</a></label><br>
+
+  <input type="checkbox" data-level="AA"> <label for="c_grupos">Os principais grupos de deficiência reconhecidos pela legislação brasileira. <a href="#RP2">[2]</a></label><br>
+
+  <input type="checkbox" data-level="AA"> <label for="c_custo">O custo e tempo adicional estimado para implementação da acessibilidade em projetos digitais. <a href="#RP8">[8]</a></label><br>
+
+  <input type="checkbox" data-level="AA"> <label for="c_mercado">O potencial de mercado das pessoas com deficiência como público consumidor e usuário de tecnologia. <a href="#RP9">[9]</a></label><br>
+
+  <input type="checkbox" data-level="AA"> <label for="c_legis">As legislações aplicáveis, incluindo Convenção sobre os Direitos das Pessoas com Deficiência e Portaria nº 3 (eMAG). <a href="#RP2">[2]</a> <a href="#RP3">[3]</a></label><br>
+
+  <input type="checkbox" data-level="AA"> <label for="c_ods">Importância da acessibilidade digital para o cumprimento dos Objetivos de Desenvolvimento Sustentável (ODS). <a href="#RP10">[10]</a></label><br>
+
+
+
+---
+
+## 3. Planejamento do Projeto
+
+> “É importante prever e elaborar a arquitetura para todos os públicos com deficiência, visando uma vida autônoma, com segurança e bem-estar.”  
+> <a href="#RP1">[1]</a>
+
+
+  <input type="checkbox" data-level="AAA"> <label for="pl_atividades">Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade. <a href="#RP1">[1]</a></label><br>
+
+  <input type="checkbox" data-level="AAA"> <label for="pl_recursos">Recursos alocados (pessoas, softwares, cursos e tarefas específicas para acessibilidade). <a href="#RP8">[8]</a></label><br>
+
+  <input type="checkbox" data-level="AAA"> <label for="pl_criterios">Critérios de sucesso definidos que atendam pelo menos aos níveis A e AA da WCAG 2.2. <a href="#RP4">[4]</a></label><br>
+
+  <input type="checkbox" data-level="AAA"> <label for="pl_validacao">Processos de validação contínua com usuários reais com deficiência. <a href="#RP6">[6]</a></label><br>
+
+  <input type="checkbox" data-level="AAA"> <label for="pl_doc">Documentação e versionamento de requisitos de acessibilidade no ciclo de vida do projeto. <a href="#RP5">[5]</a></label><br>
+
+
+---
 
 ## Referências Bibliográficas
 
