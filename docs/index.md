@@ -1,3 +1,5 @@
+hide: [navigation]
+
 # WebAble Grupo 10
 
 <p align="center">
@@ -14,7 +16,7 @@ O WebAble foi criado a partir da necessidade de promover soluções digitais mai
 
 ## **Como usar o WebAble?**
 
-O VerificAAA foi pensado para ser intuitivo, colaborativo e de fácil aplicação.
+O WebAble foi pensado para ser intuitivo, colaborativo e de fácil aplicação.
 Ele está dividido em quatro seções principais:
 
 - **Desenvolvimento Web:** Itens técnicos de acessibilidade em sites e aplicações.

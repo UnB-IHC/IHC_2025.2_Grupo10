@@ -22,100 +22,100 @@ hide: [navigation]
  </div>
 
 ## Imagens
- <input type="checkbox" data-level="A"> <b>Adicionar `alt`</b> para imagens, botões-imagem, gráficos e imagens de mapas com pontos de acesso. <a href="#RP1">[1]</a>  
+ <input type="checkbox" data-level="A"> Todas as <b>imagens, ícones e gráficos</b> devem conter um texto alternativo (`alt`) que descreva seu conteúdo. <a href="#RP1">[1]</a>  
 
- <input type="checkbox" data-level="A"> <b>Adicionar `alt=""`</b> para imagens decorativas que não têm significado. <a href="#RP1">[1]</a>  
+ <input type="checkbox" data-level="A"> Use <b>`alt=""`</b> em imagens meramente decorativas, sem informação relevante. <a href="#RP1">[1]</a>  
 
- <input type="checkbox" data-level="A"> <b>Incluir descrição no `alt`</b> para imagens que contêm texto. <a href="#RP1">[1]</a>  
+ <input type="checkbox" data-level="A"> Adicione uma <b>descrição textual no `alt`</b> sempre que a imagem contiver texto visível. <a href="#RP1">[1]</a>  
 
 ## Vídeos
- <input type="checkbox" data-level="A"> <b>Adicionar legendas</b> para áudio em vídeos. <a href="#RP2">[2]</a>  
+ <input type="checkbox" data-level="A"> Inclua <b>legendas sincronizadas</b> para todo conteúdo de áudio em vídeos. <a href="#RP2">[2]</a>  
 
- <input type="checkbox" data-level="A"> <b>Evitar conteúdo com <i>flashes</i></b> (gatilhos para convulsões). <a href="#RP3">[3]</a>  
+ <input type="checkbox" data-level="AAA"> Evite <b>animações ou vídeos com flashes</b> que possam causar desconforto ou convulsões. <a href="#RP3">[3]</a>  
 
 ## Controles
- <input type="checkbox" data-level="A"> <b>Adicionar `href`</b> em links. <a href="#RP4">[4]</a>  
+ <input type="checkbox" data-level="A"> Certifique-se de que todos os <b>links possuem `href`</b> válido. <a href="#RP4">[4]</a>  
 
- <input type="checkbox" data-level="A"> <b>Adicionar underline</b> nos links. <a href="#RP5">[5]</a>  
+ <input type="checkbox" data-level="AA"> Os <b>links devem ser claramente visíveis</b>, por exemplo, com sublinhado. <a href="#RP5">[5]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Adicionar estados de foco</b> em campos e botões. <a href="#RP6">[6]</a>  
+ <input type="checkbox" data-level="A"> Garanta que <b>botões e campos exibam foco</b> ao serem selecionados. <a href="#RP6">[6]</a>  
 
- <input type="checkbox" data-level="A"> <b>Adicionar `type="button"`</b> nos botões. <a href="#RP4">[4]</a>  
+ <input type="checkbox" data-level="A"> Defina corretamente o <b>atributo `type="button"`</b> nos botões. <a href="#RP4">[4]</a>  
 
- <input type="checkbox" data-level="A"> <b>Adicionar skip-link</b> para o conteúdo principal. <a href="#RP7">[7]</a>  
+ <input type="checkbox" data-level="A"> Adicione um <b>link para pular diretamente ao conteúdo principal</b> (“skip link”). <a href="#RP7">[7]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Indicar quando um link abre nova guia</b>. <a href="#RP8">[8]</a>  
+ <input type="checkbox" data-level="AA"> Informe o usuário quando um <b>link abrir em nova aba ou janela</b>. <a href="#RP8">[8]</a>  
 
 ## Formulário
- <input type="checkbox" data-level="A"> <b>Adicionar `label`</b> aos campos. <a href="#RP9">[9]</a>  
+ <input type="checkbox" data-level="A"> Cada <b>campo de formulário</b> deve ter um `label` descritivo. <a href="#RP9">[9]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Adicionar `<fieldset>` e `<legend>`</b> em seções. <a href="#RP4">[4]</a>  
+ <input type="checkbox" data-level="A"> Utilize <b>`<fieldset>` e `<legend>`</b> para organizar grupos de campos relacionados. <a href="#RP4">[4]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Adicionar `autocomplete`</b> para campos. <a href="#RP10">[10]</a>  
+ <input type="checkbox" data-level="AA"> Ative o <b>`autocomplete`</b> para facilitar o preenchimento de dados. <a href="#RP10">[10]</a>  
 
- <input type="checkbox" data-level="A"> <b>Exibir erros acima do formulário</b>. <a href="#RP11">[11]</a>  
+ <input type="checkbox" data-level="A"> Mostre <b>mensagens de erro acima do formulário</b> para melhor visibilidade. <a href="#RP11">[11]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Adicionar `aria-describedby`</b> para campos. <a href="#RP11">[11]</a>  
+ <input type="checkbox" data-level="AA"> Use <b>`aria-describedby`</b> para associar campos às mensagens de ajuda ou erro. <a href="#RP11">[11]</a>  
 
- <input type="checkbox" data-level="AAA"> <b>Mensagens de erro também auditivas</b>. <a href="#RP5">[5]</a>  
+ <input type="checkbox" data-level="AAA"> Forneça <b>mensagens de erro audíveis</b> para usuários com deficiência visual. <a href="#RP5">[5]</a>  
 
 ## Mídia
- <input type="checkbox" data-level="A"> <b>Impedir `autoplay`</b> em vídeos/áudios. <a href="#RP12">[12]</a>  
+ <input type="checkbox" data-level="A"> Desative o <b>`autoplay`</b> em vídeos e áudios. <a href="#RP12">[12]</a>  
 
- <input type="checkbox" data-level="A"> <b>Adicionar `type`</b> a botões/entradas. <a href="#RP4">[4]</a>  
+ <input type="checkbox" data-level="A"> Especifique o <b>`type`</b> correto em botões e entradas. <a href="#RP4">[4]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Adicionar pausa</b> para todas as mídias. <a href="#RP13">[13]</a>  
+ <input type="checkbox" data-level="AA"> Permita que o usuário <b>pause ou controle</b> todas as mídias. <a href="#RP13">[13]</a>  
 
- <input type="checkbox" data-level="AAA"> <b>Adicionar transcrição</b> para áudios. <a href="#RP1">[1]</a>  
+ <input type="checkbox" data-level="AAA"> Ofereça uma <b>transcrição textual</b> para todo conteúdo em áudio. <a href="#RP1">[1]</a>  
 
 ## Semântica
- <input type="checkbox" data-level="A"> Uso de elementos <b>HTML nativos</b>.  
+ <input type="checkbox" data-level="A"> Utilize <b>elementos HTML nativos</b> sempre que possível.  
 
- <input type="checkbox" data-level="AA"> Fluxo <b>lógico e contínuo</b>.  
+ <input type="checkbox" data-level="A"> Mantenha um <b>fluxo lógico e coerente</b> na leitura da página.  
 
- <input type="checkbox" data-level="AA"> Descrições <b>compreensíveis</b>.  
+ <input type="checkbox" data-level="AA"> Escreva <b>descrições claras e compreensíveis</b>.  
 
- <input type="checkbox" data-level="AA"> <b>Semântica correta</b>.  
+ <input type="checkbox" data-level="A"> Use a <b>semântica correta</b> dos elementos para representar o conteúdo.  
 
- <input type="checkbox" data-level="AAA"> Rótulos <b>objetivos</b>.  
+ <input type="checkbox" data-level="AA"> Empregue <b>rótulos curtos e objetivos</b> para facilitar a leitura.  
 
 ## Texto
- <input type="checkbox" data-level="A"> <b>Evitar textos em imagens</b>.  
+ <input type="checkbox" data-level="A"> <b>Evite inserir texto dentro de imagens</b>; prefira texto real.  
 
- <input type="checkbox" data-level="AA"> <b>Permitir redimensionamento de texto</b> (até 200%).  
+ <input type="checkbox" data-level="AA"> Permita <b>ampliar o texto até 200%</b> sem perda de legibilidade.  
 
- <input type="checkbox" data-level="AA"> <b>Altura das fontes não fixa</b>.  
+ <input type="checkbox" data-level="AA"> Use <b>tamanhos de fonte ajustáveis</b>, sem valores fixos.  
 
 ## Teclado
- <input type="checkbox" data-level="A"> Funcionalidades disponíveis por <b>teclado</b>.  
+ <input type="checkbox" data-level="A"> Todas as funções devem ser <b>acessíveis pelo teclado</b>.  
 
- <input type="checkbox" data-level="AA"> <b>Mouseover também por teclado</b>.  
+ <input type="checkbox" data-level="AA"> Ações com <b>mouseover</b> também devem funcionar com o teclado.  
 
- <input type="checkbox" data-level="A"> <b>Foco visível</b> e coerente.  
+ <input type="checkbox" data-level="A"> O <b>foco do teclado</b> deve ser sempre visível e consistente.  
 
- <input type="checkbox" data-level="AA"> <b>CSS :hover/:focus</b> configurados.  
+ <input type="checkbox" data-level="AA"> Configure corretamente as pseudo-classes <b>`:hover` e `:focus`</b>.  
 
- <input type="checkbox" data-level="AA"> <b>Atalhos via TAB</b> funcionam.  
+ <input type="checkbox" data-level="A"> Garanta que os <b>atalhos com TAB</b> percorrem todos os elementos interativos.  
 
- <input type="checkbox" data-level="A"> <b>Primeiro item</b> é link para conteúdo principal.  
+ <input type="checkbox" data-level="A"> O <b>primeiro item da navegação</b> deve levar ao conteúdo principal.  
 
 ## Título
- <input type="checkbox" data-level="AA"> <b>Hierarquia lógica</b> de títulos. <a href="#RP17">[17]</a>  
+ <input type="checkbox" data-level="AA"> Mantenha uma <b>hierarquia lógica</b> entre os títulos (h1, h2, h3...). <a href="#RP17">[17]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Usar h1–h3</b> adequadamente. <a href="#RP17">[17]</a>  
+ <input type="checkbox" data-level="AA"> Utilize as tags <b>h1–h3</b> conforme a importância do conteúdo. <a href="#RP17">[17]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Não pular níveis</b> de cabeçalho.  
+ <input type="checkbox" data-level="AA"> <b>Evite pular níveis</b> na hierarquia de cabeçalhos.  
 
- <input type="checkbox" data-level="A"> <b>Cada página com h1</b> descritivo. <a href="#RP17">[17]</a>  
+ <input type="checkbox" data-level="A"> Garanta que <b>cada página tenha um h1 descritivo</b> e único. <a href="#RP17">[17]</a>  
 
 ## Dispositivo Móvel
- <input type="checkbox" data-level="AA"> <b>Permitir rotação</b> da tela. <a href="#RP14">[14]</a>  
+ <input type="checkbox" data-level="AAA"> Permita a <b>rotação da tela</b> entre modos retrato e paisagem. <a href="#RP14">[14]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Evitar rolagem horizontal</b>. <a href="#RP16">[16]</a>  
+ <input type="checkbox" data-level="AA"> Evite a <b>rolagem horizontal</b> em dispositivos móveis. <a href="#RP16">[16]</a>  
 
- <input type="checkbox" data-level="AA"> <b>Facilitar interação em toques</b>. <a href="#RP18">[18]</a>  
- 
- <input type="checkbox" data-level="AAA"> <b>Espaço suficiente</b> entre elementos. <a href="#RP7">[7]</a>  
+ <input type="checkbox" data-level="AAA"> Garanta uma <b>interação fácil e precisa por toque</b>. <a href="#RP18">[18]</a>  
+
+ <input type="checkbox" data-level="AA"> Deixe <b>espaço adequado entre botões e links</b> para evitar toques acidentais. <a href="#RP7">[7]</a>  
 
 
  # Referência Bibliográfica
