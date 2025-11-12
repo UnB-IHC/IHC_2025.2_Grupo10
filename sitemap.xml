@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pockets.github.io/IHC_2025.2_Grupo10/index.html</loc>
-         <lastmod>2025-11-10</lastmod>
+         <lastmod>2025-11-12</lastmod>
     </url>
     <url>
          <loc>https://pockets.github.io/IHC_2025.2_Grupo10/design/design.html</loc>
-         <lastmod>2025-11-10</lastmod>
+         <lastmod>2025-11-12</lastmod>
     </url>
     <url>
          <loc>https://pockets.github.io/IHC_2025.2_Grupo10/devWeb/non_text_content.html</loc>
-         <lastmod>2025-11-10</lastmod>
+         <lastmod>2025-11-12</lastmod>
     </url>
     <url>
          <loc>https://pockets.github.io/IHC_2025.2_Grupo10/geracaoConteudo/conteudo.html</loc>
-         <lastmod>2025-11-10</lastmod>
+         <lastmod>2025-11-12</lastmod>
     </url>
     <url>
          <loc>https://pockets.github.io/IHC_2025.2_Grupo10/gestaoProjeto/gestaoProjeto.html</loc>
-         <lastmod>2025-11-10</lastmod>
+         <lastmod>2025-11-12</lastmod>
+    </url>
+    <url>
+         <loc>https://pockets.github.io/IHC_2025.2_Grupo10/heuristica/heuristica.html</loc>
+         <lastmod>2025-11-12</lastmod>
     </url>
     <url>
          <loc>https://pockets.github.io/IHC_2025.2_Grupo10/tools/ferramentas.html</loc>
-         <lastmod>2025-11-10</lastmod>
+         <lastmod>2025-11-12</lastmod>
     </url>
 </urlset>
