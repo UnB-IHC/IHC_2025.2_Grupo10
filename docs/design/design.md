@@ -37,50 +37,51 @@ Critérios relacionados à forma como o usuário compreende o conteúdo sem depe
 
 Critérios sobre o uso da cor, contraste e legibilidade visual.
 
-<input type="checkbox" data-level="A"> <b>A cor não deve ser o único meio de transmitir informações.</b> <a id="TEC4" href="#RP4">[4]</a>  
-<input type="checkbox" data-level="AA"> <b>Texto e imagens de texto devem ter contraste de pelo menos 4,5:1.</b> <a id="TEC5" href="#RP5">[5]</a>  
-<input type="checkbox" data-level="AAA"> <b>Contraste de 7:1 para texto e imagens de texto (nível AAA).</b> <a id="TEC6" href="#RP6">[6]</a>  
-<input type="checkbox" data-level="AA"> <b>Elementos gráficos e componentes da interface devem ter contraste mínimo de 3:1 com o fundo.</b> <a id="TEC7" href="#RP7">[7]</a>  
-<input type="checkbox" data-level="AA"> <b>A cor não deve ser o único meio de transmitir informações ou identificar ações...</b> <a id="TEC8" href="#RP8">[8]</a>  
-<input type="checkbox" data-level="AA"> <b>Todos os componentes de interface e elementos gráficos devem possuir contraste mínimo de 3:1...</b> <a id="TEC9" href="#RP9">[9]</a>  
+<input type="checkbox" data-level="A"> A cor não deve ser o único meio de transmitir **informações**. <a id="TEC4" href="#RP4">[4]</a>  
+<input type="checkbox" data-level="AA"> Texto e imagens de texto devem ter **contraste de 4,5:1**. <a id="TEC5" href="#RP5">[5]</a>  
+<input type="checkbox" data-level="AAA"> **Contraste 7:1** para texto e imagens de texto. <a id="TEC6" href="#RP6">[6]</a>  
+<input type="checkbox" data-level="AA"> Elementos gráficos e componentes da interface devem ter **contraste mínimo de 3:1** com o fundo. <a id="TEC7" href="#RP7">[7]</a>  
+<input type="checkbox" data-level="AA"> A cor não deve ser o único meio de transmitir **informações** ou identificar ações... <a id="TEC8" href="#RP8">[8]</a>  
+<input type="checkbox" data-level="AA"> Todos os componentes de interface e elementos gráficos devem possuir **contraste mínimo de 3:1**... <a id="TEC9" href="#RP9">[9]</a>  
 
 ## Texto e legibilidade
 
 Critérios relacionados à apresentação, tamanho e espaçamento do texto.
 
-<input type="checkbox" data-level="AA"> <b>O texto pode ser aumentado até 200% sem perda de conteúdo ou funcionalidade.</b> <a id="TEC10" href="#RP10">[10]</a>  
-<input type="checkbox" data-level="AA"> <b>Prefira texto real a imagens contendo texto.</b> <a id="TEC11" href="#RP11">[11]</a>  
-<input type="checkbox" data-level="AAA"> <b>Controle de cores, largura de linha, espaçamento entre linhas e parágrafos.</b> <a id="TEC12" href="#RP12">[12]</a>  
-<input type="checkbox" data-level="AAA"> <b>Imagens de texto só devem ser usadas se forem decorativas ou essenciais.</b> <a id="TEC13" href="#RP13">[13]</a>  
-<input type="checkbox" data-level="AA"> <b>Alterações no espaçamento entre letras, palavras e linhas não devem causar perda de conteúdo.</b> <a id="TEC14" href="#RP14">[14]</a>  
-<input type="checkbox" data-level="AA"> <b>O espaçamento vertical entre linhas de texto deve ser de pelo menos 1,5 vezes o tamanho da fonte, garantindo conforto visual e boa legibilidade.</b> <a id="TEC15" href="#RP15">[15]</a>  
-<input type="checkbox" data-level="AA"> <b>O conteúdo textual deve manter funcionalidade e legibilidade quando ampliado em até 200%, sem exigir rolagem horizontal ou causar sobreposição de elementos.</b> <a id="TEC16" href="#RP16">[16]</a>  
-<input type="checkbox" data-level="AA"> <b>O conteúdo deve ser adaptável sem perda de informação ou necessidade de rolagem bidimensional.</b> <a id="TEC17" href="#RP17">[17]</a>  
+<input type="checkbox" data-level="AA"> O texto pode ser **aumentado até 200%** sem perda de conteúdo ou funcionalidade. <a id="TEC10" href="#RP10">[10]</a>  
+<input type="checkbox" data-level="AA"> Prefira **texto real** a imagens contendo texto. <a id="TEC11" href="#RP11">[11]</a>  
+<input type="checkbox" data-level="AAA"> Controle de **cores, largura de linha, espaçamento** entre linhas e parágrafos. <a id="TEC12" href="#RP12">[12]</a>  
+<input type="checkbox" data-level="AAA"> Imagens de texto só devem ser usadas se forem **decorativas ou essenciais**. <a id="TEC13" href="#RP13">[13]</a>  
+<input type="checkbox" data-level="AA"> Alterações no **espaçamento** entre letras, palavras e linhas não devem causar perda de conteúdo. <a id="TEC14" href="#RP14">[14]</a>  
+<input type="checkbox" data-level="AA"> O espaçamento vertical deve ser de pelo menos **1,5× o tamanho da fonte**, garantindo conforto visual. <a id="TEC15" href="#RP15">[15]</a>  
+<input type="checkbox" data-level="AA"> O conteúdo textual deve manter **funcionalidade e legibilidade** quando ampliado em até 200%. <a id="TEC16" href="#RP16">[16]</a>  
+<input type="checkbox" data-level="AA"> O conteúdo deve ser **adaptável** sem perda de informação ou rolagem bidimensional. <a id="TEC17" href="#RP17">[17]</a>  
 
 ## Áudio e som
 
 Critérios que tratam da acessibilidade para usuários com limitações auditivas.
 
- <input type="checkbox" data-level="AAA"> <b>Áudio com fala deve ter som de fundo ausente ou significativamente mais baixo (20 dB). <a id="TEC18" href="#RP18">[18]</a>
+<input type="checkbox" data-level="AAA"> Áudio com fala deve ter **som de fundo ausente ou 20 dB mais baixo**. <a id="TEC18" href="#RP18">[18]</a>
 
 ## Conteúdo interativo e foco
 
 Critérios sobre comportamento de foco, interação com o mouse e teclado.
 
-<input type="checkbox" data-level="AA"> <b>O conteúdo exibido ao passar o mouse ou dar foco deve poder ser descartado e acessível.</b> <a id="TEC19" href="#RP19">[19]</a>  
-<input type="checkbox" data-level="A"> <b>A navegação sequencial deve manter a lógica e o significado.</b> <a id="TEC20" href="#RP20">[20]</a>  
-<input type="checkbox" data-level="AA"> <b>O componente em foco não deve ficar totalmente oculto.</b> <a id="TEC21" href="#RP21">[21]</a>  
-<input type="checkbox" data-level="AAA"> <b>Nenhuma parte do componente em foco deve ser ocultada.</b> <a id="TEC22" href="#RP22">[22]</a>  
-<input type="checkbox" data-level="AAA"> <b>O foco deve ter contraste mínimo de 3:1 e borda visível (mínimo 2px).</b> <a id="TEC23" href="#RP23">[23]</a>  
+<input type="checkbox" data-level="AA"> O conteúdo exibido ao **passar o mouse ou dar foco** deve ser descartável e acessível. <a id="TEC19" href="#RP19">[19]</a>  
+<input type="checkbox" data-level="A"> A **navegação sequencial** deve manter a lógica e o significado. <a id="TEC20" href="#RP20">[20]</a>  
+<input type="checkbox" data-level="AA"> O **componente em foco** não deve ficar totalmente oculto. <a id="TEC21" href="#RP21">[21]</a>  
+<input type="checkbox" data-level="AAA"> Nenhuma parte do **componente em foco** deve ser ocultada. <a id="TEC22" href="#RP22">[22]</a>  
+<input type="checkbox" data-level="AAA"> O foco deve ter **contraste mínimo de 3:1** e **borda visível** (mínimo 2px). <a id="TEC23" href="#RP23">[23]</a>  
 
 ## Gestos e acionamento
 
 Critérios sobre o uso de gestos e cliques no conteúdo.
 
-<input type="checkbox" data-level="A"> <b>Todas as funções devem poder ser operadas com um único ponteiro, sem gestos complexos.</b> <a id="TEC24" href="#RP24">[24]</a>  
-<input type="checkbox" data-level="A"> <b>O acionamento de eventos com ponteiro deve poder ser cancelado ou ajustado.</b> <a id="TEC25" href="#RP25">[25]</a>  
-<input type="checkbox" data-level="AA"> <b>Toda imagem que transmite informação relevante deve possuir texto alternativo equivalente, permitindo sua compreensão por leitores de tela.</b> <a id="TEC26" href="#RP26">[26]</a>  
-<input type="checkbox" data-level="AA"> <b>Os elementos interativos devem possuir área de toque mínima de 44×44 px, garantindo acionamento fácil por pessoas com limitações motoras.</b> <a id="TEC27" href="#RP27">[27]</a>  
+<input type="checkbox" data-level="A"> Todas as funções devem ser operadas com **único ponteiro**, sem gestos complexos. <a id="TEC24" href="#RP24">[24]</a>  
+<input type="checkbox" data-level="A"> O acionamento de eventos com ponteiro deve poder ser **cancelado ou ajustado**. <a id="TEC25" href="#RP25">[25]</a>  
+<input type="checkbox" data-level="AA"> Toda imagem relevante deve possuir **texto alternativo equivalente**. <a id="TEC26" href="#RP26">[26]</a>  
+<input type="checkbox" data-level="AA"> Elementos interativos devem ter **área mínima de 44×44 px**. <a id="TEC27" href="#RP27">[27]</a>  
+
 
 ## Referências Bibliograficas
 
