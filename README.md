@@ -1,7 +1,7 @@
 # WebAble
 
 <div align="center">
-<img src="docs/imagens/logo.png" alt="Logo" style="width: 100px">
+<img src="docs/imagens/logo.png" alt="Logo" style="width: 300px">
 </div>
 
 
