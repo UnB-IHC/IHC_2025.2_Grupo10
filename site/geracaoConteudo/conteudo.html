@@ -1,1002 +1,1350 @@
+
 <!doctype html>
 <html lang="pt" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pockets.github.io/IHC_2025.2_Grupo10/geracaoConteudo/conteudo.html">
+      
+      
+        <link rel="prev" href="../design/design.html">
+      
+      
+        <link rel="next" href="../gestaoProjeto/gestaoProjeto.html">
+      
+      
+      <link rel="icon" href="../imagens/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Conteúdo - WebAble</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
 
-    <link rel="canonical" href="https://pockets.github.io/IHC_2025.2_Grupo10/geracaoConteudo/conteudo.html">
-    <link rel="prev" href="../design/design.html">
-    <link rel="next" href="../gestaoProjeto/gestaoProjeto.html">
-    <link rel="icon" href="../imagens/logo.png">
 
-    <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-    <title>Conteúdo - Projeto Grupo 10</title>
-
-    <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
-    <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-
-    <style>
-      .global-progress-wrapper {
-        margin: 1.5rem 0 2rem;
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-      }
-
-      .global-progress-info {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-      }
-
-      .global-progress-title {
-        font-weight: 700;
-        font-size: 1.05rem;
-      }
-
-      .global-progress-details {
-        font-size: 0.95rem;
-      }
-
-      .circular-progress {
-        width: 120px;
-        height: 120px;
-        position: relative;
-      }
-
-      .circular-progress svg {
-        transform: rotate(-90deg);
-        width: 100%;
-        height: 100%;
-      }
-
-      .circular-progress .circle-bg {
-        fill: none;
-        stroke: #eee;
-        stroke-width: 10;
-      }
-
-      .circular-progress .circle-fg {
-        fill: none;
-        stroke: #4CAF50;
-        stroke-width: 10;
-        stroke-linecap: round;
-        transition: stroke-dashoffset 0.3s ease;
-      }
-
-      .circular-progress .center-text {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 1.1rem;
-      }
-    </style>
-
-    <script>
-      __md_scope = new URL("..", location);
-      __md_hash = e => [...e].reduce((acc, ch) => (acc << 5) - acc + ch.charCodeAt(0), 0);
-      __md_get = (key, store = localStorage, scope = __md_scope) =>
-        JSON.parse(store.getItem(scope.pathname + "." + key));
-      __md_set = (key, value, store = localStorage, scope = __md_scope) => {
-        try {
-          store.setItem(scope.pathname + "." + key, JSON.stringify(value));
-        } catch (e) {}
-      };
-    </script>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-    <style>
-      :root {
-        --md-text-font: "Roboto";
-        --md-code-font: "Roboto Mono";
-      }
-    </style>
-
-    <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+    
   </head>
-
-  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="blue">
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="blue">
+  
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
-
     <div data-md-component="skip">
-      <a href="#geracao-de-conteudo" class="md-skip">Ir para o conteúdo</a>
-    </div>
-
-    <header class="md-header" data-md-component="header">
-      <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-        <a href="../index.html"
-           title="Projeto Grupo 10"
-           class="md-header__button md-logo"
-           aria-label="Projeto Grupo 10"
-           data-md-component="logo">
-          <img src="../imagens/logo.png" alt="logo">
+      
+        
+        <a href="#geracao-de-conteudo" class="md-skip">
+          Ir para o conteúdo
         </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
-        <label class="md-header__button md-icon" for="__drawer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/>
-          </svg>
-        </label>
+  
 
-        <div class="md-header__title" data-md-component="header-title">
-          <div class="md-header__ellipsis">
-            <div class="md-header__topic">
-              <span class="md-ellipsis">Projeto Grupo 10</span>
-            </div>
-            <div class="md-header__topic" data-md-component="header-topic">
-              <span class="md-ellipsis">Conteúdo</span>
-            </div>
-          </div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../index.html" title="WebAble" class="md-header__button md-logo" aria-label="WebAble" data-md-component="logo">
+      
+  <img src="../imagens/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WebAble
+          </span>
         </div>
-
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conteúdo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
         <form class="md-header__option" data-md-component="palette">
-          <input class="md-option"
-                 data-md-color-media=""
-                 data-md-color-scheme="default"
-                 data-md-color-primary="amber"
-                 data-md-color-accent="blue"
-                 aria-label="Modo escuro"
-                 type="radio"
-                 name="__palette"
-                 id="__palette_0">
-
-          <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/>
-            </svg>
-          </label>
-
-          <input class="md-option"
-                 data-md-color-media=""
-                 data-md-color-scheme="slate"
-                 data-md-color-primary="amber"
-                 data-md-color-accent="blue"
-                 aria-label="Modo claro"
-                 type="radio"
-                 name="__palette"
-                 id="__palette_1">
-
-          <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/>
-            </svg>
-          </label>
-        </form>
-
-        <script>
-          var palette = __md_get("__palette");
-          if (palette && palette.color) {
-            if ("(prefers-color-scheme)" === palette.color.media) {
-              var media = matchMedia("(prefers-color-scheme: light)");
-              var input = document.querySelector(
-                media.matches
-                  ? "[data-md-color-media='(prefers-color-scheme: light)']"
-                  : "[data-md-color-media='(prefers-color-scheme: dark)']"
-              );
-              palette.color.media = input.getAttribute("data-md-color-media");
-              palette.color.scheme = input.getAttribute("data-md-color-scheme");
-              palette.color.primary = input.getAttribute("data-md-color-primary");
-              palette.color.accent = input.getAttribute("data-md-color-accent");
-            }
-            for (var [key, value] of Object.entries(palette.color)) {
-              document.body.setAttribute("data-md-color-" + key, value);
-            }
-          }
-        </script>
-
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="blue"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="blue"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
         <label class="md-header__button md-icon" for="__search">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/>
-          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
-
         <div class="md-search" data-md-component="search" role="dialog">
-          <label class="md-search__overlay" for="__search"></label>
-          <div class="md-search__inner" role="search">
-            <form class="md-search__form" name="search">
-              <input type="text"
-                     class="md-search__input"
-                     name="query"
-                     aria-label="Buscar"
-                     placeholder="Buscar"
-                     autocapitalize="off"
-                     autocorrect="off"
-                     autocomplete="off"
-                     spellcheck="false"
-                     data-md-component="search-query"
-                     required>
-              <label class="md-search__icon md-icon" for="__search">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/>
-                </svg>
-              </label>
-              <nav class="md-search__options" aria-label="Pesquisar">
-                <button type="reset"
-                        class="md-search__icon md-icon"
-                        title="Limpar"
-                        aria-label="Limpar"
-                        tabindex="-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                  </svg>
-                </button>
-              </nav>
-
-              <div class="md-search__suggest" data-md-component="search-suggest"></div>
-            </form>
-
-            <div class="md-search__output">
-              <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-                <div class="md-search-result" data-md-component="search-result">
-                  <div class="md-search-result__meta">Inicializando a pesquisa</div>
-                  <ol class="md-search-result__list" role="presentation"></ol>
-                </div>
-              </div>
-            </div>
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
           </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2025.2_Grupo10
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início - WebAble
 
-        <div class="md-header__source">
-          <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10"
-             title="Ir ao repositório"
-             class="md-source"
-             data-md-component="source">
-            <div class="md-source__icon md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/>
-            </div>
-            <div class="md-source__repository">IHC_2025.2_Grupo10</div>
-          </a>
-        </div>
-      </nav>
-    </header>
+      </a>
+    </li>
+  
 
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../devWeb/non_text_content.html" class="md-tabs__link">
+          
+  
+  
+  Desenvolvimento Web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../design/design.html" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="conteudo.html" class="md-tabs__link">
+          
+  
+  
+  Geração de Conteúdo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../gestaoProjeto/gestaoProjeto.html" class="md-tabs__link">
+          
+  
+  
+  Gestão de Projetos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../heuristica/heuristica.html" class="md-tabs__link">
+          
+  
+  
+  Heuristica de Nielsen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../blueprinting/blueprinting.html" class="md-tabs__link">
+          
+  
+  
+  Blueprinting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tools/ferramentas.html" class="md-tabs__link">
+          
+  
+  
+  Ferramentas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
     <div class="md-container" data-md-component="container">
-      <nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
-        <div class="md-grid">
-          <ul class="md-tabs__list">
-            <li class="md-tabs__item">
-              <a href="../index.html" class="md-tabs__link">Home</a>
-            </li>
-            <li class="md-tabs__item">
-              <a href="../devWeb/non_text_content.html" class="md-tabs__link">Desenvolvimento Web</a>
-            </li>
-            <li class="md-tabs__item">
-              <a href="../design/design.html" class="md-tabs__link">Design</a>
-            </li>
-            <li class="md-tabs__item md-tabs__item--active">
-              <a href="conteudo.html" class="md-tabs__link">Geração de Conteúdo</a>
-            </li>
-            <li class="md-tabs__item">
-              <a href="../gestaoProjeto/gestaoProjeto.html" class="md-tabs__link">Gestão de Projetos</a>
-            </li>
-            <li class="md-tabs__item">
-              <a href="../tools/ferramentas.html" class="md-tabs__link">Ferramentas</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      
+      
+        
+      
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
-          <div class="md-sidebar md-sidebar--primary"
-               data-md-component="sidebar"
-               data-md-type="navigation">
-            <div class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                <nav class="md-nav md-nav--primary md-nav--lifted"
-                     aria-label="Navegação"
-                     data-md-level="0">
-                  <label class="md-nav__title" for="__drawer">
-                    <a href="../index.html"
-                       title="Projeto Grupo 10"
-                       class="md-nav__button md-logo"
-                       aria-label="Projeto Grupo 10"
-                       data-md-component="logo">
-                      <img src="../imagens/logo.png" alt="logo">
-                    </a>
-                    Projeto Grupo 10
-                  </label>
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
-                  <div class="md-nav__source">
-                    <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10"
-                       title="Ir ao repositório"
-                       class="md-source"
-                       data-md-component="source">
-                      <div class="md-source__icon md-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                          <path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/>
-                      </div>
-                      <div class="md-source__repository">IHC_2025.2_Grupo10</div>
-                    </a>
-                  </div>
 
-                  <ul class="md-nav__list" data-md-scrollfix>
-                    <li class="md-nav__item">
-                      <a href="../index.html" class="md-nav__link">
-                        <span class="md-ellipsis">Home</span>
-                      </a>
-                    </li>
+  
 
-                    <li class="md-nav__item md-nav__item--nested">
-                      <input class="md-nav__toggle md-toggle md-toggle--indeterminate"
-                             type="checkbox"
-                             id="__nav_2">
-                      <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-                        <span class="md-ellipsis">Desenvolvimento Web</span>
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
-                      <nav class="md-nav"
-                           data-md-level="1"
-                           aria-labelledby="__nav_2_label"
-                           aria-expanded="false">
-                        <label class="md-nav__title" for="__nav_2">
-                          <span class="md-nav__icon md-icon"></span>
-                          Desenvolvimento Web
-                        </label>
-                        <ul class="md-nav__list" data-md-scrollfix>
-                          <li class="md-nav__item">
-                            <a href="../devWeb/non_text_content.html" class="md-nav__link">
-                              <span class="md-ellipsis">Desenvolvimento</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </li>
 
-                    <li class="md-nav__item md-nav__item--nested">
-                      <input class="md-nav__toggle md-toggle md-toggle--indeterminate"
-                             type="checkbox"
-                             id="__nav_3">
-                      <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-                        <span class="md-ellipsis">Design</span>
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
-                      <nav class="md-nav"
-                           data-md-level="1"
-                           aria-labelledby="__nav_3_label"
-                           aria-expanded="false">
-                        <label class="md-nav__title" for="__nav_3">
-                          <span class="md-nav__icon md-icon"></span>
-                          Design
-                        </label>
-                        <ul class="md-nav__list" data-md-scrollfix>
-                          <li class="md-nav__item">
-                            <a href="../design/design.html" class="md-nav__link">
-                              <span class="md-ellipsis">Design</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </li>
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="WebAble" class="md-nav__button md-logo" aria-label="WebAble" data-md-component="logo">
+      
+  <img src="../imagens/logo.png" alt="logo">
 
-                    <!-- Geração de Conteúdo: seção ativa com todos os itens visíveis -->
-                    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__nav_4" checked>
-                      <label class="md-nav__link" for="__nav_4" id="__nav_4_label">
-                        <span class="md-ellipsis">Geração de Conteúdo</span>
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
-                      <nav class="md-nav"
-                           data-md-level="1"
-                           aria-labelledby="__nav_4_label"
-                           aria-expanded="true">
-                        <label class="md-nav__title" for="__nav_4">
-                          <span class="md-nav__icon md-icon"></span>
-                          Geração de Conteúdo
-                        </label>
-                        <ul class="md-nav__list" data-md-scrollfix>
-                          <li class="md-nav__item md-nav__item--active">
-                            <a href="conteudo.html#geracao-de-conteudo" class="md-nav__link md-nav__link--active">
-                              <span class="md-ellipsis">Visão geral</span>
-                            </a>
-                          </li>
-                          <li class="md-nav__item">
-                            <a href="conteudo.html#principios-gerais" class="md-nav__link">
-                              <span class="md-ellipsis">Princípios gerais</span>
-                            </a>
-                          </li>
-                          <li class="md-nav__item">
-                            <a href="conteudo.html#texto-e-leitura" class="md-nav__link">
-                              <span class="md-ellipsis">Texto e leitura</span>
-                            </a>
-                          </li>
-                          <li class="md-nav__item">
-                            <a href="conteudo.html#imagens-e-graficos" class="md-nav__link">
-                              <span class="md-ellipsis">Imagens e gráficos</span>
-                            </a>
-                          </li>
-                          <li class="md-nav__item">
-                            <a href="conteudo.html#audio-e-video" class="md-nav__link">
-                              <span class="md-ellipsis">Áudio e vídeo</span>
-                            </a>
-                          </li>
-                          <li class="md-nav__item">
-                            <a href="conteudo.html#navegacao-e-interacao" class="md-nav__link">
-                              <span class="md-ellipsis">Navegação e interação</span>
-                            </a>
-                          </li>
-                          <li class="md-nav__item">
-                            <a href="conteudo.html#formularios-e-entradas" class="md-nav__link">
-                              <span class="md-ellipsis">Formulários e entradas de usuário</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </li>
-                    <!-- fim Geração de Conteúdo -->
+    </a>
+    WebAble
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2025.2_Grupo10
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início - WebAble
+    
+  </span>
+  
 
-                    <li class="md-nav__item md-nav__item--nested">
-                      <input class="md-nav__toggle md-toggle md-toggle--indeterminate"
-                             type="checkbox"
-                             id="__nav_5">
-                      <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-                        <span class="md-ellipsis">Gestão de Projetos</span>
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
-                      <nav class="md-nav"
-                           data-md-level="1"
-                           aria-labelledby="__nav_5_label"
-                           aria-expanded="false">
-                        <label class="md-nav__title" for="__nav_5">
-                          <span class="md-nav__icon md-icon"></span>
-                          Gestão de Projetos
-                        </label>
-                        <ul class="md-nav__list" data-md-scrollfix>
-                          <li class="md-nav__item">
-                            <a href="../gestaoProjeto/gestaoProjeto.html" class="md-nav__link">
-                              <span class="md-ellipsis">Gestão de Projetos</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </li>
-
-                    <li class="md-nav__item md-nav__item--nested">
-                      <input class="md-nav__toggle md-toggle md-toggle--indeterminate"
-                             type="checkbox"
-                             id="__nav_6">
-                      <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-                        <span class="md-ellipsis">Ferramentas</span>
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
-                      <nav class="md-nav"
-                           data-md-level="1"
-                           aria-labelledby="__nav_6_label"
-                           aria-expanded="false">
-                        <label class="md-nav__title" for="__nav_6">
-                          <span class="md-nav__icon md-icon"></span>
-                          Ferramentas
-                        </label>
-                        <ul class="md-nav__list" data-md-scrollfix>
-                          <li class="md-nav__item">
-                            <a href="../tools/ferramentas.html" class="md-nav__link">
-                              <span class="md-ellipsis">Ferramentas de Acessibilidade</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              <h1 id="geracao-de-conteudo">Geração de conteúdo</h1>
-              <p>
-                Checklist de geração de conteúdo digital acessível, com foco em texto, imagens e mídias audiovisuais.
-                As recomendações abaixo reúnem boas práticas gerais e normas de acessibilidade amplamente utilizadas,
-                como a WCAG 2.2 (Web Content Accessibility Guidelines) e a ABNT NBR 17225:2025 (Acessibilidade em conteúdo e aplicações web — Requisitos).
-              </p>
-
-              <section aria-label="Progresso geral da checklist de geração de conteúdo">
-                <div class="global-progress-wrapper">
-                  <div class="circular-progress" aria-hidden="true">
-                    <svg viewBox="0 0 120 120">
-                      <circle
-                        class="circle-bg"
-                        cx="60"
-                        cy="60"
-                        r="54"
-                      ></circle>
-                      <circle
-                        class="circle-fg"
-                        cx="60"
-                        cy="60"
-                        r="54"
-                        stroke-dasharray="339.292"
-                        stroke-dashoffset="339.292"
-                      ></circle>
-                    </svg>
-                    <div class="center-text" id="global-progress-percent">0%</div>
-                  </div>
-                  <div class="global-progress-info">
-                    <div class="global-progress-title">Progresso geral da checklist</div>
-                    <div class="global-progress-details">
-                      <span id="global-progress-count">0/0 itens concluídos</span>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <h2 id="principios-gerais">Princípios gerais</h2>
-<ul class="task-list">
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (1.3.3) Não depender apenas de pistas visuais ou auditivas para transmitir informação.
-    <br>
-    <small>
-      Equivalência: 
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html">
-        WCAG 2.2 – Sensory Characteristics (1.3.3)
       </a>
-      e ABNT NBR 17225:2025 – 5.10.1 Características sensoriais (Requisito).
-    </small>
-  </li>
+    </li>
+  
 
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (1.4.1) Garantir que a informação não seja transmitida apenas por cor.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html">
-        WCAG 2.2 – Use of Color (1.4.1)
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Desenvolvimento Web
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Desenvolvimento Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devWeb/non_text_content.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desenvolvimento
+    
+  </span>
+  
+
       </a>
-      e ABNT NBR 17225:2025 – 5.11.1 Uso de cores (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AAA">
-    (2.2.3) Garantir que limites de tempo não sejam necessários para entender ou operar o conteúdo, exceto quando essenciais.
-    <br>
-    <small>
-      Referência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html">
-        WCAG 2.2 – No Timing (2.2.3)
-      </a>.
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (5.16.2 / 5.16.3) Atender aos requisitos da NBR 17225 para conteúdos com limite de tempo ajustável e controle de atualização automática.
-    <br>
-    <small>
-      Requisitos: ABNT NBR 17225:2025 – 5.16.2 Limite de tempo ajustável e 5.16.3 Controle de atualização.
-      Relacionado aos princípios de tempo do WCAG 2.2 (2.2.1 / 2.2.2).
-    </small>
-  </li>
-</ul>
-
-<h2 id="texto-e-leitura">Texto e leitura</h2>
-<ul class="task-list">
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.3) Garantir contraste suficiente para texto e imagens de texto.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">
-        WCAG 2.2 – Contrast (Minimum) (1.4.3)
-      </a>
-      e ABNT NBR 17225:2025 – 5.11.3 Contraste para texto (mínimo) (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.4) Permitir que o texto seja redimensionado sem perda de conteúdo ou funcionalidade.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html">
-        WCAG 2.2 – Resize Text (1.4.4)
-      </a>
-      e ABNT NBR 17225:2025 – 5.12.7 Texto redimensionado (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.10) Garantir que o conteúdo se reorganize (reflow) sem exigir rolagem em duas direções.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow.html">
-        WCAG 2.2 – Reflow (1.4.10)
-      </a>
-      e ABNT NBR 17225:2025 – 5.10.4 Design responsivo e 5.12.6 Largura de blocos de texto (Requisitos).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.12) Garantir que o texto continue legível quando o usuário ajustar espaçamento de texto.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html">
-        WCAG 2.2 – Text Spacing (1.4.12)
-      </a>
-      e ABNT NBR 17225:2025 – 5.12.1 a 5.12.4
-      (Espaçamento entre linhas, parágrafos, letras e palavras – Requisitos).
-    </small>
-  </li>
-</ul>
-
-<h2 id="imagens-e-graficos">Imagens e gráficos</h2>
-<ul class="task-list">
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (1.1.1) Fornecer alternativas em texto para todo conteúdo não textual (imagens, ícones, gráficos, etc.).
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">
-        WCAG 2.2 – Non-text Content (1.1.1)
-      </a>
-      e ABNT NBR 17225:2025 – 5.2.1 a 5.2.4 e 5.2.6
-      (Textos alternativos para imagens de conteúdo, funcionais, decorativas, complexas e mapas de imagens – Requisitos).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.5) Evitar imagens de texto; usar texto verdadeiro, a menos que não haja outra forma de apresentação.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html">
-        WCAG 2.2 – Images of Text (1.4.5)
-      </a>
-      e ABNT NBR 17225:2025 – 5.2.5 Imagens de texto (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.11) Garantir contraste suficiente para componentes de interface e objetos gráficos (ícones, bordas, indicadores visuais).
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">
-        WCAG 2.2 – Non-text Contrast (1.4.11)
-      </a>
-      e ABNT NBR 17225:2025 – 5.11.4 Contraste para componentes e 5.11.5 Contraste para objetos gráficos (Requisitos).
-    </small>
-  </li>
-</ul>
-
-<h2 id="audio-e-video">Áudio e vídeo</h2>
-<ul class="task-list">
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (1.2.1) Fornecer alternativa quando o conteúdo pré-gravado for apenas áudio ou apenas vídeo.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html">
-        WCAG 2.2 – Audio-only and Video-only (Prerecorded) (1.2.1)
-      </a>
-      e ABNT NBR 17225:2025 – 5.14.1 Alternativa em texto para áudio (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (1.2.2) Fornecer legendas sincronizadas para o áudio pré-gravado em vídeos.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html">
-        WCAG 2.2 – Captions (Prerecorded) (1.2.2)
-      </a>
-      e ABNT NBR 17225:2025 – 5.14.2 Legendas descritivas para vídeo (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (1.2.3) Fornecer audiodescrição ou alternativa em texto que descreva informações visuais em vídeo pré-gravado.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html">
-        WCAG 2.2 – Audio Description or Media Alternative (Prerecorded) (1.2.3)
-      </a>
-      e ABNT NBR 17225:2025 – 5.14.4 Audiodescrição para vídeo (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.2.4) Fornecer legendas ao vivo e sincronizadas para áudio em tempo real em vídeos.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html">
-        WCAG 2.2 – Captions (Live) (1.2.4)
-      </a>
-      e ABNT NBR 17225:2025 – 5.14.9 Legendas para áudio e vídeo ao vivo (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.2.5) Fornecer audiodescrição sincronizada para informações visuais relevantes em vídeo pré-gravado.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html">
-        WCAG 2.2 – Audio Description (Prerecorded) (1.2.5)
-      </a>
-      e ABNT NBR 17225:2025 – 5.14.4 Audiodescrição para vídeo (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AAA">
-    (1.2.7) Fornecer audiodescrição estendida quando a informação visual exigir mais tempo para ser descrita.
-    <br>
-    <small>
-      Referência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html">
-        WCAG 2.2 – Extended Audio Description (Prerecorded) (1.2.7)
-      </a>.
-      (Na ABNT NBR 17225:2025, o requisito correspondente é tratado como recomendação, não como requisito obrigatório.)
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AAA">
-    (1.2.8) Fornecer uma alternativa em texto completa contendo todo o conteúdo visual e sonoro do vídeo.
-    <br>
-    <small>
-      Referência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html">
-        WCAG 2.2 – Media Alternative (Prerecorded) (1.2.8)
-      </a>.
-      (Na ABNT NBR 17225:2025, a transcrição completa é recomendada, não requisito obrigatório.)
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (5.14.7) Garantir controle independente de áudio (pausar/parar ou reduzir volume de trilhas automáticas).
-    <br>
-    <small>
-      Requisito: ABNT NBR 17225:2025 – 5.14.7 Controle de áudio (Requisito).
-      Relacionado ao
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">
-        WCAG 2.2 – 1.4.2 Audio Control
-      </a>.
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (2.2.2) Fornecer controles para pausar, parar ou ocultar conteúdo que se move, pisca ou é atualizado automaticamente.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">
-        WCAG 2.2 – Pause, Stop, Hide (2.2.2)
-      </a>
-      e requisitos correlatos da ABNT NBR 17225:2025 – 5.14.7 Controle de áudio e 5.16.3 Controle de atualização (Requisitos).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (2.3.1) Não incluir conteúdo que pisque mais de três vezes por segundo.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html">
-        WCAG 2.2 – Three Flashes or Below Threshold (2.3.1)
-      </a>
-      e ABNT NBR 17225:2025 – 5.15.4 Flash intermitente limitado (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AAA">
-    (2.3.3) Permitir desativar animações de movimento disparadas por interação.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/animated-content.html">
-        WCAG 2.2 – Animation from Interactions (2.3.3)
-      </a>
-      e ABNT NBR 17225:2025 – 5.15.1 Controle de animação (Requisito).
-    </small>
-  </li>
-</ul>
-
-<h2 id="navegacao-e-interacao">Navegação e interação</h2>
-<ul class="task-list">
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (2.1.1) Garantir que toda funcionalidade seja operável via teclado, sem exigir tempo específico.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">
-        WCAG 2.2 – Keyboard (2.1.1)
-      </a>
-      e ABNT NBR 17225:2025 – 5.1.1, 5.1.3, 5.1.13 (Indicador de foco visível,
-      elemento em foco visível e acessibilidade por teclado parcial – Requisitos).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AAA">
-    (2.1.3) Garantir que não haja armadilhas de teclado e nenhuma exceção à operação via teclado.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard-no-exception.html">
-        WCAG 2.2 – Keyboard (No Exception) (2.1.3)
-      </a>
-      e ABNT NBR 17225:2025 – 5.1.6 Armadilha de foco (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (1.4.13) Garantir que conteúdo exibido ao passar o mouse ou focar possa ser descartado e não obscureça conteúdo importante.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html">
-        WCAG 2.2 – Content on Hover or Focus (1.4.13)
-      </a>
-      e ABNT NBR 17225:2025 – 5.1.8 Conteúdo adicional persistente e 5.1.9 Conteúdo adicional dispensável (Requisitos).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (2.4.4) Garantir que a finalidade de links possa ser determinada pelo texto do link ou contexto.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html">
-        WCAG 2.2 – Link Purpose (In Context) (2.4.4)
-      </a>
-      e ABNT NBR 17225:2025 – 5.7.4 Propósito do link no contexto (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (2.4.6) Usar títulos e rótulos claros para estruturar o conteúdo.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html">
-        WCAG 2.2 – Headings and Labels (2.4.6)
-      </a>
-      e ABNT NBR 17225:2025 – 5.3.1, 5.3.2 e 5.3.5 (Semântica e uso de cabeçalhos – Requisitos).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (2.4.7) Garantir um indicador de foco visível ao navegar por elementos interativos.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">
-        WCAG 2.2 – Focus Visible (2.4.7)
-      </a>
-      e ABNT NBR 17225:2025 – 5.1.1 Indicador de foco visível e 5.11.6 Contraste para indicador de foco visível (Requisitos).
-    </small>
-  </li>
-</ul>
-
-<h2 id="formularios-e-entradas">Formulários e entradas de usuário</h2>
-<ul class="task-list">
-  <li class="task-list-item">
-    <input type="checkbox" data-level="A">
-    (3.3.1) Identificar claramente erros quando usuários enviarem informações (por exemplo, formulários de contato, cadastro, envio de mídia).
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html">
-        WCAG 2.2 – Error Identification (3.3.1)
-      </a>
-      e ABNT NBR 17225:2025 – 5.9.9 Mensagem de erro descritiva (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (3.3.3) Fornecer sugestões para correção quando forem detectados erros de entrada.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html">
-        WCAG 2.2 – Error Suggestion (3.3.3)
-      </a>
-      e ABNT NBR 17225:2025 – 5.9.10 Sugestão de correção (Requisito).
-    </small>
-  </li>
-
-  <li class="task-list-item">
-    <input type="checkbox" data-level="AA">
-    (3.3.4) Reduzir o risco de erros em envios importantes (por exemplo, dados legais ou financeiros) com confirmação ou validação.
-    <br>
-    <small>
-      Equivalência:
-      <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html">
-        WCAG 2.2 – Error Prevention (Legal, Financial, Data) (3.3.4)
-      </a>
-      e ABNT NBR 17225:2025 – 5.9.12 Prevenção de erro para formulários críticos (Requisito).
-    </small>
-  </li>
-</ul>
+    </li>
+  
 
               
-            </article>
-          </div>
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Geração de Conteúdo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Geração de Conteúdo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Conteúdo
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="conteudo.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conteúdo
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#progresso-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progresso WCAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-de-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição de imagens
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-de-imagens-complexas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição de imagens complexas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ícones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midias-de-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mídias de vídeo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autodescricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autodescrição
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Gestão de Projetos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Gestão de Projetos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gestaoProjeto/gestaoProjeto.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestão de Projetos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Heuristica de Nielsen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Heuristica de Nielsen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristica/heuristica.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heurística de Nielsen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blueprinting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Blueprinting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blueprinting/blueprinting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia prático de Blueprinting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Ferramentas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/ferramentas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas de Acessibilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#progresso-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progresso WCAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-de-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição de imagens
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-de-imagens-complexas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição de imagens complexas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ícones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midias-de-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mídias de vídeo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autodescricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autodescrição
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+<h1 id="geracao-de-conteudo">Geração de conteúdo</h1>
+<p>"Para produzir conteúdo digital acessível, a primeira etapa é compreender que tudo o que comunicamos impacta as pessoas; por isso, é fundamental começar pela forma como abordamos nosso público e criar a cultura e o hábito de acessibilidade digital em nossas equipes". Nesse sentido, nesta seção se apresentam boas práticas em formato de checklist para garantir acessibilidade na geração de conteúdo.</p>
+<h2 id="progresso-wcag">Progresso WCAG</h2>
+<div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 30px; margin-bottom: 30px;">
+  <div style="text-align: center;">
+    <h3>Nível A</h3>
+    <canvas id="graficoA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AA</h3>
+    <canvas id="graficoAA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h3>Nível AAA</h3>
+    <canvas id="graficoAAA" width="150" height="150"></canvas>
+  </div>
+ </div>
+
+<h2 id="termos">Termos</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Sempre utilize o termo "pessoas com deficiência" (PCD) e depois complemente: visual, física, intelectual, múltipla, pessoa  surda, pessoa cega, usuária de cadeira de rodas (cadeirante), tetraplégica, paraplégica, pessoa com nanismo, com baixa visão, pessoa autista, disléxica, neurodiversa ou neurodivergente.  </li>
+</ul>
+<h2 id="textos">Textos</h2>
+<p><input type="checkbox" data-level="A"> <b>Usar </b> textos descomplicados e objetivos. <a id="TEC2" href="#RP2"><a href="usar para fazer referencias">2</a></a> </p>
+<p><input type="checkbox" data-level="AA"> <b>Usar</b> de palavras conhecidas.  <a href="#RP1">[1]</a>  </p>
+<p><input type="checkbox" data-level="AAA"> <b>Evitar </b> figuras de linguagem. e frases com "senso de ugência"  <a d="TEC3" href="#RP3">[3]</a>  </p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Usar pontuação adequada. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Evitar frases extensas (ideal é ter de 15 a 20 palavras). </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Usar preferencialmente a ordem direta nas orações. </li>
+</ul>
+<h2 id="descricao-de-imagens">Descrição de imagens</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Identificar o tipo de imagem e personagem (foto, ilustração, mapa, gráfico... e " o que / quem"). </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Localizar (onde). </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Descrever a ação (o que faz, como faz). </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Referenciar. </li>
+</ul>
+<h2 id="descricao-de-imagens-complexas">Descrição de imagens complexas</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Posicionar gráfico, quadrinhos, quadros e outras imagens compexas em um local separado. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Descrição sucinta no texto alternativo. </li>
+</ul>
+<h2 id="icones">Ícones</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Adicionar iconografia. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Adicionar ícone e texto. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Adicionar texto alternativo para ícones clicáveis. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Descrever no texto alternativo, quando necessário usá-lo, a ação da pessoa usuária e para onde será direcionada. </li>
+</ul>
+<h2 id="midias-de-video">Mídias de vídeo</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Adicionar descritivo curto para vídeos. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Optar pro legendas: Open Caption e Closed Caption para vídeos. </li>
+</ul>
+<h2 id="autodescricao">Autodescrição</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Adionar autodescrição no roteiro dos vídeos </li>
+</ul>
+<h1 id="podcasts">Podcasts</h1>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Transcrever o conteúdo do episódio. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Incluir além da partes faladas, como sons de fundos, efeitos sonoros, quem está falando etc. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Inserir um avatar na página falada para a interpretção do texto transcrito para Libras. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Considerar também formato de vídeo.</li>
+</ul>
+<h2 id="hashtags-e-emojis">Hashtags e Emojis</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Em hashtags, utilize a primeira letra de cada palavra em maiúsculas para que leitores possam identificar palavras corretamente. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Não abusar de emojis, pois nem sempre sua descrição é suficiente para um bom entendimento. </li>
+</ul>
+<h2 id="hiperlinks">Hiperlinks</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Descrição de links e botões devem ser compreensíveis de maneira maneira isolada. </li>
+</ul>
+<h2 id="bibliografia">Bibliografia</h2>
+<blockquote>
+<p><a id="RP1" href="#TEC1"></a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 9 Mai. 2024.</p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
       </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
     </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const allCheckboxes = document.querySelectorAll("ul.task-list input[type='checkbox']");
-        const total = allCheckboxes.length;
-        const circle = document.querySelector(".circle-fg");
-        const percentText = document.getElementById("global-progress-percent");
-        const countText = document.getElementById("global-progress-count");
-        const radius = 54;
-        const circumference = 2 * Math.PI * radius;
-
-        if (circle) {
-          circle.style.strokeDasharray = `${circumference}`;
-          circle.style.strokeDashoffset = `${circumference}`;
-        }
-
-        function updateGlobalProgress() {
-          const checked = document.querySelectorAll("ul.task-list input[type='checkbox']:checked").length;
-          const pct = total ? Math.round((checked / total) * 100) : 0;
-
-          if (percentText) {
-            percentText.textContent = `${pct}%`;
-          }
-          if (countText) {
-            countText.textContent = `${checked}/${total} itens concluídos`;
-          }
-          if (circle) {
-            const offset = circumference * (1 - pct / 100);
-            circle.style.strokeDashoffset = `${offset}`;
-          }
-        }
-
-        allCheckboxes.forEach(cb => {
-          cb.addEventListener("change", updateGlobalProgress);
-        });
-        updateGlobalProgress();
-      });
-    </script>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      
+        <script src="../js/progresso.js"></script>
+      
+    
   </body>
 </html>

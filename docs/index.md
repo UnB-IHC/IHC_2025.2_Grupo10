@@ -3,7 +3,7 @@ hide: [navigation]
 # WebAble Grupo 10
 
 <p align="center">
-  <img src="imagens/logo.png" alt="Logo" width="200"/>
+  <img src="imagens/logo.png" alt="Logo" width="300"/>
 </p>
 
 ## **Descrição**

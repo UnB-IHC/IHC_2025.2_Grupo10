@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt" class="no-js">
   <head>
@@ -13,7 +14,7 @@
         <link rel="prev" href="../geracaoConteudo/conteudo.html">
       
       
-        <link rel="next" href="../tools/ferramentas.html">
+        <link rel="next" href="../heuristica/heuristica.html">
       
       
       <link rel="icon" href="../imagens/logo.png">
@@ -21,7 +22,7 @@
     
     
       
-        <title>Gestão de Projetos - Projeto Grupo 10</title>
+        <title>Gestão de Projetos - WebAble</title>
       
     
     
@@ -47,36 +48,8 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/custom.css">
     
-    <style>
-        .waffle-container {
-            display: flex; /* Permite que os quadrados fluam em linha */
-            flex-wrap: wrap; /* Quebra a linha quando não couberem mais */
-            max-width: 400px; /* Limite para a grade não ficar muito larga */
-            margin-top: 10px;
-        }
-        .waffle-square {
-            width: 20px;
-            height: 20px;
-            background-color: #eee; /* Cor do item pendente */
-            border: 1px solid #ccc;
-            margin: 2px;
-            transition: background-color 0.3s ease; /* Transição suave */
-        }
-        .waffle-square.completo {
-            background-color: #4CAF50; /* Cor do item completo (verde) */
-            border-color: #388E3C;
-        }
-        .progress-text {
-            font-weight: bold; 
-            margin-left: 10px; 
-            font-size: 1.1em;
-            vertical-align: top;
-            margin-top: 10px; /* Alinha o texto com a grade */
-            display: inline-block; /* Permite alinhar */
-        }
-    </style>
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -103,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#primeiro-passo" class="md-skip">
+        <a href="#checklist-de-acessibilidade-gestao-de-projetos" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -115,9 +88,11 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../index.html" title="Projeto Grupo 10" class="md-header__button md-logo" aria-label="Projeto Grupo 10" data-md-component="logo">
+    <a href="../index.html" title="WebAble" class="md-header__button md-logo" aria-label="WebAble" data-md-component="logo">
       
   <img src="../imagens/logo.png" alt="logo">
 
@@ -130,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Projeto Grupo 10
+            WebAble
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -221,7 +196,7 @@
         <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10" title="Ir ao repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     IHC_2025.2_Grupo10
@@ -231,14 +206,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -255,7 +224,7 @@
   
     
   
-  Home
+  Início - WebAble
 
       </a>
     </li>
@@ -352,6 +321,46 @@
     
     
       <li class="md-tabs__item">
+        <a href="../heuristica/heuristica.html" class="md-tabs__link">
+          
+  
+  
+  Heuristica de Nielsen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../blueprinting/blueprinting.html" class="md-tabs__link">
+          
+  
+  
+  Blueprinting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../tools/ferramentas.html" class="md-tabs__link">
           
   
@@ -367,7 +376,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -375,7 +390,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -386,19 +403,19 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Projeto Grupo 10" class="md-nav__button md-logo" aria-label="Projeto Grupo 10" data-md-component="logo">
+    <a href="../index.html" title="WebAble" class="md-nav__button md-logo" aria-label="WebAble" data-md-component="logo">
       
   <img src="../imagens/logo.png" alt="logo">
 
     </a>
-    Projeto Grupo 10
+    WebAble
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo10" title="Ir ao repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     IHC_2025.2_Grupo10
@@ -420,7 +437,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Início - WebAble
     
   </span>
   
@@ -441,8 +458,6 @@
     
     
       
-      
-        
       
     
     
@@ -517,8 +532,6 @@
     
       
       
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -591,8 +604,6 @@
     
     
       
-      
-        
       
     
     
@@ -672,8 +683,6 @@
         
       
       
-        
-      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
@@ -719,6 +728,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Gestão de Projetos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="gestaoProjeto.html" class="md-nav__link md-nav__link--active">
         
   
@@ -730,6 +752,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#progresso-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progresso WCAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-personas-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Personas WCAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conscientizacao-da-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Conscientização da Equipe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-planejamento-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Planejamento do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -755,8 +841,6 @@
     
       
       
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -773,7 +857,7 @@
   
   
   <span class="md-ellipsis">
-    Ferramentas
+    Heuristica de Nielsen
     
   </span>
   
@@ -783,6 +867,152 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Heuristica de Nielsen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristica/heuristica.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heurística de Nielsen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blueprinting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Blueprinting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blueprinting/blueprinting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia prático de Blueprinting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Ferramentas
           </label>
@@ -826,6 +1056,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -838,6 +1070,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#progresso-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progresso WCAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-personas-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Personas WCAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conscientizacao-da-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Conscientização da Equipe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-planejamento-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Planejamento do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -849,89 +1134,97 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
   
   
 
 
-<h1 id="primeiro-passo">Primeiro Passo</h1>
-<p>"Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade" <a id="TEC1" href="#RP1">[1]</a>.</p>
+<h1 id="checklist-de-acessibilidade-gestao-de-projetos">Checklist de Acessibilidade — Gestão de Projetos</h1>
+<blockquote>
+<p>“Para que a acessibilidade digital possa impactar positivamente a vida de milhões de pessoas, ela deve ser pensada logo no início, na concepção do projeto, fase de iniciação na Gestão de Projetos de Acessibilidade.”  <a id="TEC1" href="#RP1">[1]</a></p>
+</blockquote>
+<h2 id="progresso-wcag">Progresso WCAG</h2>
+<div class="progress-sidebar" style="display: flex; flex-direction: row; justify-content: center; gap: 60px; margin-bottom: 30px;">
+  <div style="text-align: center;">
+    <h4>Personas</h4>
+    <canvas id="graficoA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h4>Conscientização</h4>
+    <canvas id="graficoAA" width="150" height="150"></canvas>
+  </div>
+  <div style="text-align: center;">
+    <h4>Planejamento do Projeto</h4>
+    <canvas id="graficoAAA" width="150" height="150"></canvas>
+  </div>
+ </div>
 
-<div style="margin-top: 10px; margin-bottom: 15px;">
-    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
-    <div class="waffle-container" id="waffle-passo"></div>
-    <span id="text-passo" class="progress-text">0/9</span>
-</div>
-<p>Nessa lógica, durante a etapa inicial do desenvolvimento de um software, elabore personas com os seguintes perfis abaixo, dessa forma, seu projeto vai garantir que o software contenha requisitos de acessibilidade.</p>
-<p>Em seu projeto, foram elaboradas personas para... </p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas com Deficiência Visual </b> (cegueira, baixa visão, daltonismo ou deficiência cromática)</li>
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas com Deficiência Física </b> (fraqueza, tremores, movimentos involuntá rios, paralisia, limitações da sensação, dor que impede movimento, ausênciade membros) </li>
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas com Deficiência Auditiva </b> (surdez, baixa audição, surdocegueira)</li>
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas com Deficiência na Fala </b> (dificuldade para falar, volume insuficiente, gagueira, mudez) </li>
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas Neurodiversas </b> (dificuldades de diferentes graus para ver, escutar, falar, compreender e interagir socialmente)</li>
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas com Múltiplas Deficiências </b> (combinação de duas ou mais deficiências anteriores)</li>
-<li class="task-list-item"><input type="checkbox"/> <b> Possíveis limitações decorrentes do envelhecimento </b> (que podem ser de um ou mais grupos de deficiências)</li>
-<li class="task-list-item"><input type="checkbox"/> <b> Pessoas com analfabetismo </b> (analfabetismo digital e funcional níveis 1, 2 e 3)</li>
-</ul>
-
-
-<h1 id="conscientizacao">Conscientização</h1>
-<p>"Na iniciação do projeto, é necessário garantir que a equipe de projeto esteja consciente sobre a questão da acessibilidade digital, dos direitos das pessoas com deficiência e do potencial de mercado desse público" <a id="TEC1" href="#RP1">[1]</a>.</p>
-
-<div style="margin-top: 10px; margin-bottom: 15px;">
-    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
-    <div class="waffle-container" id="waffle-consc"></div>
-    <span id="text-consc" class="progress-text">0/12</span>
-</div>
-<p>Sendo assim, existem argumentos que podem facilitar o processo de conscientização da equipe sobre a questão da acessibilidade digital. Esse argumentos estão representados no checklist abaixo. </p>
-<p>Em seu projeto, a equipe está consciente de...</p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> Quantidade de pessoas no mundo com algum tipo de deficiência.</li>
-<li class="task-list-item"><input type="checkbox"/> Quantidade de pessoas no Brasil com algum tipo de deficiência, segundo IBGE.</li>
-<li class="task-list-item"><input type="checkbox"/> Natureza da deficiência: congênita, hereditária, adquirida, temporária.</li>
-<li class="task-list-item"><input type="checkbox"/> Grupos mais comuns de tipos de deficiência.</li>
-<li class="task-list-item"><input type="checkbox"/> Quanto custa a acessibilidade?</li>
-<li class="task-list-item"><input type="checkbox"/> Quanto tempo a mais o projeto precisará para implementar acessibilidade?</li>
-<li class="task-list-item"><input type="checkbox"/> Quantas pessoas com deficiência vão usar meu aplicativo ou acessar meu sítio de Internet?</li>
-<li class="task-list-item"><input type="checkbox"/> Pessoas cegas compram online?</li>
-<li class="task-list-item"><input type="checkbox"/> Pessoas tetraplégicas usam smartphone?</li>
-<li class="task-list-item"><input type="checkbox"/> Legislação: A Convenção sobre os Direitos das Pessoas com Deficiência Comentada.</li>
-<li class="task-list-item"><input type="checkbox"/> Legislação: PORTARIA Nº 3, DE 7 DE MAIO DE 2007.</li>
-<li class="task-list-item"><input type="checkbox"/> Análise de mercado de software de acessibilidade digital.</li>
-</ul>
-
-
-<h1 id="planejamento">Planejamento</h1>
-<p>"É importante prever e elaborar a arquitetura para todos os públicos com deficiência, visando uma vida autônoma, com segurança e bem-estar" <a id="TEC1" href="#RP1">[1]</a>.</p>
-
-<div style="margin-top: 10px; margin-bottom: 15px;">
-    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Progresso:</label>
-    <div class="waffle-container" id="waffle-plan"></div>
-    <span id="text-plan" class="progress-text">0/3</span>
-</div>
-<p>Assim, é de suma importância que se tenha, incluso no plano de projeto, e, definição de recursos alocados, para estratégia de acessibilidade de um projeto de software. </p>
-<p>Em seu planejamento, há...</p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade?</li>
-<li class="task-list-item"><input type="checkbox"/> Recursos alocados (pessoas, softwares, cursos, tarefas)?</li>
-<li class="task-list-item"><input type="checkbox"/> Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG)?</li>
-<li class="task-list-item"><input type="checkbox"/> Recursos alocados (pessoas, softwares, cursos, tarefas)?</li>
-</ul>
-
-
+<h2 id="1-personas-wcag">1. Personas WCAG</h2>
+<p>Durante a etapa inicial do desenvolvimento de um software acessível, recomenda-se a criação de <em>personas</em> que representem diferentes grupos de usuários, conforme orientações da WCAG 2.2 <a id="TEC2" href="#RP4">[4]</a> e da ABNT NBR 17225:2025 <a href="#RP5">[5]</a>.</p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_visual"><b>Pessoas com Deficiência Visual</b> (cegueira, baixa visão, daltonismo ou deficiência cromática). <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_fisica"><b>Pessoas com Deficiência Física</b> (fraqueza, tremores, movimentos involuntários, paralisia, limitações da sensação, dor que impede movimento, ausência de membros). <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_auditiva"><b>Pessoas com Deficiência Auditiva</b> (surdez, baixa audição, surdocegueira). <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_fala"><b>Pessoas com Deficiência na Fala</b> (dificuldade para falar, volume insuficiente, gagueira, mudez). <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_neuro"><b>Pessoas Neurodiversas</b> (autismo, TDAH, dislexia e outras condições cognitivas). <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_multiplas"><b>Pessoas com Múltiplas Deficiências</b> (combinação de duas ou mais deficiências). <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_idosos"><b>Possíveis Limitações Decorrentes do Envelhecimento</b> (visão reduzida, audição prejudicada, mobilidade limitada). <a href="#RP7">[7]</a></label><br></p>
+<p><input type="checkbox" data-level="A"> <label for="p_personas_analf"><b>Pessoas com Analfabetismo</b> (analfabetismo digital e funcional, níveis 1, 2 e 3). <a href="#RP8">[8]</a></label><br></p>
+<h2 id="2-conscientizacao-da-equipe">2. Conscientização da Equipe</h2>
+<blockquote>
+<p>“Na iniciação do projeto, é necessário garantir que a equipe esteja consciente sobre a questão da acessibilidade digital, dos direitos das pessoas com deficiência e do potencial de mercado desse público.”  <a href="#RP1">[1]</a></p>
+</blockquote>
+<p><input type="checkbox" data-level="AA"> <label for="c_ibge">A quantidade de pessoas com deficiência no Brasil, conforme o Censo IBGE 2022. <a href="#RP8">[8]</a></label><br></p>
+<p><input type="checkbox" data-level="AA"> <label for="c_natureza">Que deficiências podem ser congênitas, hereditárias, adquiridas ou temporárias. <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="AA"> <label for="c_grupos">Os principais grupos de deficiência reconhecidos pela legislação brasileira. <a href="#RP2">[2]</a></label><br></p>
+<p><input type="checkbox" data-level="AA"> <label for="c_custo">O custo e tempo adicional estimado para implementação da acessibilidade em projetos digitais. <a href="#RP9">[9]</a></label><br></p>
+<p><input type="checkbox" data-level="AA"> <label for="c_mercado">O potencial de mercado das pessoas com deficiência como público consumidor e usuário de tecnologia. <a href="#RP10">[10]</a></label><br></p>
+<p><input type="checkbox" data-level="AA"> <label for="c_legis">As legislações aplicáveis, incluindo Convenção sobre os Direitos das Pessoas com Deficiência e Portaria nº 3 (eMAG). <a href="#RP2">[2]</a> <a href="#RP3">[3]</a></label><br></p>
+<p><input type="checkbox" data-level="AA"> <label for="c_ods">Importância da acessibilidade digital para o cumprimento dos Objetivos de Desenvolvimento Sustentável (ODS). <a href="#RP6">[6]</a></label><br></p>
+<hr />
+<h2 id="3-planejamento-do-projeto">3. Planejamento do Projeto</h2>
+<blockquote>
+<p>“É importante prever e elaborar a arquitetura para todos os públicos com deficiência, visando uma vida autônoma, com segurança e bem-estar.”<br />
+<a href="#RP1">[1]</a></p>
+</blockquote>
+<p><input type="checkbox" data-level="AAA"> <label for="pl_atividades">Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade. <a href="#RP1">[1]</a></label><br></p>
+<p><input type="checkbox" data-level="AAA"> <label for="pl_recursos">Recursos alocados (pessoas, softwares, cursos e tarefas específicas para acessibilidade). <a href="#RP9">[9]</a></label><br></p>
+<p><input type="checkbox" data-level="AAA"> <label for="pl_criterios">Critérios de sucesso definidos que atendam pelo menos aos níveis A e AA da WCAG 2.2. <a href="#RP4">[4]</a></label><br></p>
+<p><input type="checkbox" data-level="AAA"> <label for="pl_validacao">Processos de validação contínua com usuários reais com deficiência. <a href="#RP7">[7]</a></label><br></p>
+<p><input type="checkbox" data-level="AAA"> <label for="pl_doc">Documentação e versionamento de requisitos de acessibilidade no ciclo de vida do projeto. <a href="#RP5">[5]</a></label><br></p>
+<hr />
 <h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
-<blockquote>
-<p><a id="RP1" href="#TEC1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 9 Mai. 2024.</p>
-</blockquote>
-<h2 id="bibliografia">Bibliografia</h2>
-<blockquote>
-<p></a> A Convenção sobre Direitos das Pessoas com Deficiência comentada / Coordenação de Ana Paula Crosara de Resende e Flavia Maria de Paiva Vital . _ Brasília : Secretaria Especial dos Direitos Humanos, 2008. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf</a>. Acesso em: 9 Mai. 2024</p>
-<p></a> BRASIL. Secretaria de Logística e Tecnologia da Informação. Portaria nº 3, de 7 de maio de 2007. Institucionaliza o Modelo de Acessibilidade em Governo Eletrônico – e-MAG no âmbito do Sistema de Administração dos Recursos de Informação e Informática – SISP. Diário Oficial da União, Brasília, DF, 7 maio 2007. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/legislacao/portaria3_eMAG.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/legislacao/portaria3_eMAG.pdf</a>. Acesso em: 9 Mai. 2024</p>
-<p></a> MORDOR INTELLIGENCE. Digital Accessibility Software Market Size &amp; Share Analysis- Growth Trends &amp; Forecasts (2024-2029). Disponível em: <a href="https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market">https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market</a>. Acesso em: 9 Mai. 2024</p>
-<p></a> WORLD WIDE WEB CONSORTIUM. Web Content Accessibility Guidelines (WCAG) 2.1. Recomendação W3C, 21 setembro 2023. Disponível em: <a href="https://www.w3.org/TR/WCAG21/#sotd">https://www.w3.org/TR/WCAG21/#sotd</a>. Acesso em: 9 Mai. 2024</p>
-</blockquote>
+<p><a id="RP1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. <strong>Guia de Boas Práticas para Acessibilidade Digital.</strong><br />
+Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP2">2.</a> BRASIL. <strong>A Convenção sobre Direitos das Pessoas com Deficiência — Comentada.</strong> Coordenação: Ana Paula Crosara de Resende; Flávia Maria de Paiva Vital. Brasília: Secretaria Especial dos Direitos Humanos, 2008. Disponível em: https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP3">3.</a> BRASIL. Secretaria de Logística e Tecnologia da Informação. <strong>Portaria nº 3, de 7 de maio de 2007 — Institucionaliza o Modelo de Acessibilidade em Governo Eletrônico (e-MAG).</strong> Diário Oficial da União, Brasília, DF, 7 maio 2007.<br />
+Disponível em: https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/legislacao/portaria3_eMAG.pdf. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP4">4.</a> WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.2.</strong> Recomendação W3C, 05 out. 2023. Disponível em: https://www.w3.org/TR/WCAG22/. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP5">5.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS (ABNT). <strong>ABNT NBR 17225:2025 — Acessibilidade em conteúdo e aplicações web — Requisitos.</strong> Rio de Janeiro: ABNT, 2025. </p>
+<p><a id="RP6">6.</a> ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Agenda 2030 — Objetivos de Desenvolvimento Sustentável (ODS).</strong><br />
+Disponível em: https://brasil.un.org/pt-br/sdgs. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP7">7.</a> G3ict — Global Initiative for Inclusive ICTs. <strong>Digital Accessibility: Evaluating with Users with Disabilities.</strong> Technical Report, 2021. Disponível em: https://g3ict.org/. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP8">8.</a> IBGE — Instituto Brasileiro de Geografia e Estatística. <strong>Censo Demográfico 2022 — Resultados sobre Pessoas com Deficiência.</strong> Agência de Notícias IBGE, 23 maio 2025. Disponível em: https://agenciadenoticias.ibge.gov.br/. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP9">9.</a> FORRESTER RESEARCH; W3C Web Accessibility Initiative. <strong>The Business Case for Digital Accessibility.</strong><br />
+2018. Disponível em: https://www.w3.org/WAI/business-case/. <strong>Acesso em: 08 nov. 2025.</strong></p>
+<p><a id="RP10">10.</a> RETURN ON DISABILITY GROUP. <strong>The Global Economics of Disability Report.</strong> 2022. Disponível em: https://www.returnondisability.com/. <strong>Acesso em: 08 nov. 2025.</strong></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
 
 
                 
@@ -939,8 +1232,6 @@
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -978,106 +1269,17 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", {"navigation.instant": false}], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      
+        <script src="../js/progresso.js"></script>
+      
     
-<script>
-// Espera o conteúdo da página carregar completamente
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. Define as seções que queremos monitorar
-    // Renomeei 'progressId' para 'waffleContainerId' para clareza
-    const sections = [
-        { 
-            headerId: 'primeiro-passo', 
-            waffleContainerId: 'waffle-passo', 
-            textId: 'text-passo' 
-        },
-        { 
-            headerId: 'conscientizacao', 
-            waffleContainerId: 'waffle-consc', 
-            textId: 'text-consc' 
-        },
-        { 
-            headerId: 'planejamento', 
-            waffleContainerId: 'waffle-plan', 
-            textId: 'text-plan' 
-        }
-    ];
-
-    // 2. Função para ATUALIZAR o progresso (muda as cores)
-    function updateProgress(section, taskList) {
-        
-        // 3. Pega os elementos da UI
-        const waffleContainer = document.getElementById(section.waffleContainerId);
-        const textLabel = document.getElementById(section.textId);
-        
-        if (!waffleContainer || !textLabel) {
-             console.error(`Waffle container ou texto não encontrados para ${section.headerId}.`);
-            return;
-        }
-
-        // 4. Calcula o progresso
-        const checkboxes = taskList.querySelectorAll('input[type="checkbox"]');
-        const total = checkboxes.length;
-        const checked = taskList.querySelectorAll('input[type="checkbox"]:checked').length;
-        
-        // 5. Atualiza o texto (Ex: "5/8")
-        textLabel.textContent = `${checked}/${total}`;
-        
-        // 6. Atualiza o Waffle Chart
-        const squares = waffleContainer.querySelectorAll('.waffle-square');
-        squares.forEach((square, index) => {
-            // Se o índice do quadrado for menor que o n° de marcados, colore
-            if (index < checked) {
-                square.classList.add('completo');
-            } else {
-                square.classList.remove('completo');
-            }
-        });
-    }
-
-    // 7. Configuração inicial:
-    sections.forEach(section => {
-        const header = document.getElementById(section.headerId);
-        const waffleContainer = document.getElementById(section.waffleContainerId);
-        if (!header || !waffleContainer) return;
-
-        // Encontra a lista de tarefas (pulando os <p> e a <div> do waffle)
-        let taskList = header.nextElementSibling;
-        while (taskList && taskList.tagName !== 'UL') {
-            taskList = taskList.nextElementSibling;
-        }
-        
-        if (taskList && taskList.classList.contains('task-list')) {
-            
-            // 8. CRIA os quadrados do Waffle
-            const totalItems = taskList.querySelectorAll('input[type="checkbox"]').length;
-            waffleContainer.innerHTML = ''; // Limpa o contêiner
-            
-            for (let i = 0; i < totalItems; i++) {
-                const square = document.createElement('div');
-                square.className = 'waffle-square';
-                waffleContainer.appendChild(square);
-            }
-            
-            // 9. Adiciona o "ouvinte" de eventos na lista
-            taskList.addEventListener('change', (e) => {
-                if (e.target.type === 'checkbox') {
-                    // Passa a taskList para a função não ter que encontrá-la de novo
-                    updateProgress(section, taskList);
-                }
-            });
-            
-            // 10. Roda a função uma vez no início para setar o estado (Ex: 0/8)
-            updateProgress(section, taskList);
-        }
-    });
-
-});
-</script>
-</body>
+  </body>
 </html>
