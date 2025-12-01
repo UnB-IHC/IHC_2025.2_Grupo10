@@ -1,4 +1,3 @@
-
 console.log("✅ WCAG content.js ativo");
 
 function injectAxe() {
@@ -26,7 +25,6 @@ function injectAxe() {
 function injectPageScript() {
   return new Promise((resolve) => {
     if (document.getElementById("wcagPageScript")) {
-     
       console.log("⚠️ pageScript já injetado");
       return resolve();
     }
@@ -37,14 +35,11 @@ function injectPageScript() {
 
     s.onload = () => {
       console.log("✅ pageScript carregado");
-      // opcional: remover tag para não poluir o DOM
-      // s.remove();
       resolve();
     };
 
     s.onerror = () => {
       console.warn("⚠️ Falha ao injetar pageScript (mas continuaremos tentando)");
-      // ainda resolve para não travar; pageScript pode já estar presente por outro meio
       resolve();
     };
 
@@ -58,16 +53,12 @@ function removeHighlights() {
 }
 
 // Aplica destaques visuais para os elementos violadores
-// Cria overlays (retângulos) para cada elemento
 function highlightViolations(violations) {
   try {
     removeHighlights();
 
     if (!Array.isArray(violations) || violations.length === 0) return;
 
-    // *** INÍCIO DA CORREÇÃO ***
-
-    // Pega a posição de rolagem atual DA PÁGINA
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
 
@@ -98,14 +89,13 @@ function highlightViolations(violations) {
                 }
               }
 
-              // criar overlay
               const overlay = document.createElement("div");
               overlay.className = "wcag-highlight-overlay";
               
               Object.assign(overlay.style, {
-                position: "absolute", // <-- MUDADO
-                top: `${rect.top + scrollY}px`,  // <-- MUDADO (adiciona scroll)
-                left: `${rect.left + scrollX}px`, // <-- MUDADO (adiciona scroll)
+                position: "absolute",
+                top: `${rect.top + scrollY}px`,
+                left: `${rect.left + scrollX}px`,
                 width: `${rect.width}px`,
                 height: `${rect.height}px`,
                 border: "3px solid rgba(255,0,0,0.95)",
@@ -124,8 +114,6 @@ function highlightViolations(violations) {
       });
     });
 
-    // *** FIM DA CORREÇÃO ***
-
   } catch (err) {
     console.error("Erro em highlightViolations:", err);
   }
@@ -136,14 +124,11 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
   if (req.action === "runAxe") {
     (async () => {
       try {
-        // garante axe e pageScript carregados antes de pedir execução
         await injectAxe();
         await injectPageScript();
 
-        // envia pedido para pageScript executar axe.run()
         window.postMessage({ type: "RUN_AXE" }, "*");
 
-        // espera resposta da página
         function listener(e) {
           if (!e || !e.data) return;
           if (e.data.type === "AXE_RESULTS") {
@@ -154,7 +139,6 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
               sendResponse(null);
               return;
             }
-            // aplica destaque visual no contexto do content script
             highlightViolations(results.violations || []);
             sendResponse(results);
           }
@@ -168,12 +152,38 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
       }
     })();
 
-    return true; // indica resposta assíncrona
+    return true;
   }
 
   if (req.action === "clearHighlights") {
     try {
       removeHighlights();
+      sendResponse({ ok: true });
+    } catch (e) {
+      sendResponse({ ok: false, error: String(e) });
+    }
+    return true;
+  }
+
+  // ========== NOVA FUNÇÃO: Destacar apenas um erro específico ==========
+  if (req.action === "highlightSingleError") {
+    try {
+      removeHighlights();
+      highlightViolations([req.violation]);
+      
+      // Rola até o primeiro elemento do erro
+      if (req.violation.nodes && req.violation.nodes.length > 0) {
+        const firstTarget = req.violation.nodes[0].target[0];
+        try {
+          const element = document.querySelector(firstTarget);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } catch (e) {
+          console.log("Não foi possível rolar até o elemento");
+        }
+      }
+      
       sendResponse({ ok: true });
     } catch (e) {
       sendResponse({ ok: false, error: String(e) });

@@ -2,27 +2,87 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WCAG Checker</title>
-<style>
-body { font-family: Arial; width: 320px; margin: 10px; }
-button { width: 100%; padding: 10px; margin-top: 5px; cursor:pointer; }
-#resultado { margin-top: 10px; font-size: 14px; white-space: pre-wrap; }
-</style>
+<link rel="stylesheet" href="popup.css">
 
 <script src="translations.js"></script>
-<!-- <script src="jspdf.umd.min.js"></script> -->
 <script src="popup.js" defer></script>
 </head>
 <body>
 
-<h3>WCAG Checker (PT-BR)</h3>
+<div class="container">
+  <header>
+    <h1>WCAG Checker</h1>
+    <p class="subtitle">Verificador de Acessibilidade</p>
+    
+    <!-- Toggle Modo Escuro -->
+    <div class="theme-toggle">
+      <button id="themeToggle" class="theme-btn" title="Alternar tema">
+        <span class="icon">🌙</span>
+      </button>
+    </div>
+  </header>
 
-<button id="scan">Escanear Página</button>
-<button id="exportTxt">Exportar TXT</button>
-<!-- <button id="exportPdf">Exportar PDF</button> -->
-<button id="clear">Limpar destaques</button>
+  <div class="btn-group">
+    <button id="scan">
+      <span class="icon"></span>
+      Escanear Página
+    </button>
+    <button id="exportTxt">
+      <span class="icon"></span>
+      Exportar Relatório
+    </button>
+    <button id="copyClipboard">
+      <span class="icon"></span>
+      Copiar Resultados
+    </button>
+    <button id="clear">
+      <span class="icon"></span>
+      Limpar Destaques
+    </button>
+  </div>
 
-<div id="resultado"></div>
+  <!-- Filtros por Severidade -->
+  <div id="filterSection" class="filter-section" style="display: none;">
+    <div class="filter-header">
+      <span class="filter-title">🎯 Filtrar por Impacto:</span>
+    </div>
+    <div class="filter-chips">
+      <button class="filter-chip active" data-filter="all">
+        Todos <span class="chip-count" id="count-all">0</span>
+      </button>
+      <button class="filter-chip" data-filter="critical">
+        ⛔ Críticos <span class="chip-count" id="count-critical">0</span>
+      </button>
+      <button class="filter-chip" data-filter="serious">
+        🔴 Graves <span class="chip-count" id="count-serious">0</span>
+      </button>
+      <button class="filter-chip" data-filter="moderate">
+        🟡 Moderados <span class="chip-count" id="count-moderate">0</span>
+      </button>
+      <button class="filter-chip" data-filter="minor">
+        🟢 Leves <span class="chip-count" id="count-minor">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Navegação Visual -->
+  <div id="navigationSection" class="navigation-section" style="display: none;">
+    <div class="nav-controls">
+      <button id="prevError" class="nav-btn" title="Erro anterior">
+        <span>◀</span>
+      </button>
+      <span id="errorPosition" class="error-position">0 / 0</span>
+      <button id="nextError" class="nav-btn" title="Próximo erro">
+        <span>▶</span>
+      </button>
+    </div>
+    <div id="currentErrorInfo" class="current-error-info"></div>
+  </div>
+
+  <div id="resultado"></div>
+</div>
 
 </body>
 </html>
